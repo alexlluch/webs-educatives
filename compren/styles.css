@@ -11,3 +11,34 @@ body{background:#f7f9fc}.topbar{background:rgba(255,255,255,.94);box-shadow:0 3p
 .activity-page .question-actions{margin-top:15px;padding-top:14px;justify-content:flex-end}
 .site-credit{white-space:nowrap;color:var(--ink);font-size:.88rem}.site-credit strong{font-weight:750}.bank-row-end{display:flex;align-items:center;gap:16px;flex:0 0 auto}.bank-row-open{display:inline-block;padding:2px 0;color:var(--blue);font-size:.85rem;font-weight:750}.bank-row:hover .bank-row-open,.bank-row:focus-visible .bank-row-open{text-decoration:underline}.bank-row:focus-visible,.quiet-link:focus-visible{outline:2px solid var(--blue);outline-offset:2px}#bank-panel{scroll-margin-top:105px}.activity-top .quiet-link{padding:3px 0;font-size:.86rem}
 @media(max-width:600px){.site-credit{font-size:.82rem}.bank-row-end{gap:9px}.bank-row-meta{display:none}.bank-row-open{font-size:.82rem}}
+
+/* Portada pública de Comprén */
+.public-hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(260px,.65fr);gap:22px;align-items:stretch;margin:12px 0 22px}
+.public-hero-copy{padding:34px 4px 30px}
+.creator-line{display:flex;align-items:center;gap:10px;margin:18px 0 15px;color:var(--muted);font-size:.96rem}
+.creator-line strong{color:var(--ink);font-size:1.08rem}
+.creator-mark{display:grid;place-items:center;width:38px;height:38px;border-radius:13px;background:var(--blue);color:#fff;font-weight:850;font-size:1.05rem;box-shadow:0 7px 16px rgba(36,85,230,.2)}
+.public-hero h1{max-width:690px;margin:0 0 16px;font-size:clamp(2.45rem,5vw,4.1rem);line-height:1.02;letter-spacing:-.055em}
+.public-lead{max-width:650px;margin:0 0 23px;color:var(--muted);font-size:1.13rem;line-height:1.65}
+.public-hero .hero-actions{margin-bottom:15px}
+.public-hero .btn{min-height:49px;padding-inline:19px}
+.hero-note{max-width:590px;margin:0;color:var(--muted);font-size:.9rem}
+.public-hero-card{align-self:center;padding:28px;border:1px solid #dce6fb;border-radius:24px;background:linear-gradient(145deg,#edf3ff,#fff 76%);box-shadow:0 12px 32px rgba(36,68,130,.08)}
+.public-card-kicker{color:var(--blue);font-size:.79rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.public-step-number{margin:11px 0 4px;color:#bfd0ff;font-size:3.2rem;font-weight:900;line-height:1;letter-spacing:-.06em}
+.public-hero-card h2{margin:0 0 8px;font-size:1.34rem;line-height:1.2;letter-spacing:-.025em}
+.public-hero-card p{margin:0;color:var(--muted);font-size:.95rem}
+.skill-pills{display:flex;flex-wrap:wrap;gap:7px;margin-top:17px}
+.skill-pills span{padding:6px 9px;border-radius:99px;background:#fff;color:#34415d;font-size:.76rem;font-weight:700}
+.public-stats{display:grid;grid-template-columns:repeat(3,1fr);margin:0 0 21px;border:1px solid #e5ebf5;border-radius:18px;background:rgba(255,255,255,.74)}
+.public-stats>div{display:flex;align-items:baseline;gap:10px;padding:17px 20px}
+.public-stats>div+div{border-left:1px solid #e5ebf5}
+.public-stats strong{color:var(--blue);font-size:1.55rem;letter-spacing:-.04em}
+.public-stats span{color:var(--muted);font-size:.87rem}
+.public-benefits{display:grid;grid-template-columns:repeat(3,1fr);gap:13px;margin:0 0 25px}
+.public-benefits article{padding:20px 21px;border:1px solid #e8edf6;border-radius:18px;background:rgba(255,255,255,.78)}
+.benefit-index{color:var(--blue);font-size:.78rem;font-weight:850;letter-spacing:.08em}
+.public-benefits h2{margin:8px 0 6px;font-size:1.08rem;letter-spacing:-.02em}
+.public-benefits p{margin:0;color:var(--muted);font-size:.91rem;line-height:1.55}
+.home-recommendation{margin-top:20px}
+@media(max-width:760px){.public-hero{grid-template-columns:1fr;gap:10px}.public-hero-copy{padding:15px 2px 8px}.public-hero-card{width:100%;padding:22px}.public-hero h1{font-size:clamp(2.35rem,10vw,3.3rem)}.public-stats{grid-template-columns:1fr}.public-stats>div{padding:12px 17px}.public-stats>div+div{border-left:0;border-top:1px solid #e5ebf5}.public-benefits{grid-template-columns:1fr}.public-benefits article{padding:17px 18px}.home-quick{grid-template-columns:1fr;gap:13px}.home-quick .quiet-link{margin-top:2px}}
