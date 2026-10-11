@@ -2,7 +2,7 @@
 
 ## Comprén
 
-[Obrir Comprén](https://lluchvalencia.github.io/webs-educatives/compren/)
+[Obrir Comprén](https://alexlluch.github.io/webs-educatives/compren/)
 
 Versió de Comprén per a GitHub Pages, basada en el site original i ampliada amb lectures i orientacions de progrés.
 
