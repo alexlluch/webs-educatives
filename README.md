@@ -37,3 +37,10 @@ python3 -m http.server 8000
 ```
 
 Obri `http://localhost:8000/compren/`. Per a afegir lectures, edita `compren/supplement.js` i executa les comprovacions.
+
+
+## UD1 · Ens escoltem
+
+[Obrir UD1 · Ens escoltem](https://alexlluch.github.io/webs-educatives/val1ud1/)
+
+Còpia estàtica del site original, adaptada per a funcionar en GitHub Pages. Inclou lectures, teoria, activitats autocorrectives, laboratori i models d’examen. El progrés es guarda en el navegador i no se sincronitza amb el site original.
