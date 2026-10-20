@@ -16,6 +16,12 @@ Versió de Comprén per a GitHub Pages, basada en el site original i ampliada am
 
 Autoria: Àlex Lluch.
 
+## Psicologia · UD2 · Ment, cervell i conducta
+
+[Obrir la UD2 de Psicologia](https://alexlluch.github.io/webs-educatives/psicologia-ud2/)
+
+Clon de la unitat original amb les millores de la UD1 de Psicologia: tests interactius amb correcció, índex ràpid fix i activitats sense cercador. Conserva els dotze nuclis teòrics, les lectures, les set il·lustracions, les pràctiques anatòmiques, les 165 activitats i la preparació de l’exposició oral. [Documentació i codi font](psicologia-ud2/README.md).
+
 ## Fitxers i comprovació
 
 La carpeta `compren/` conté el web estàtic, sense dependències de Sites ni serveis externs. Els fitxers inclouen el banc original i l’ampliació de lectures. Es publica des de la branca `main`, amb GitHub Pages.
