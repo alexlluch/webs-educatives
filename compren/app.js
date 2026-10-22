@@ -103,6 +103,20 @@ const distractorTweaks={
 "lluna-2":["A l’entrada de l’institut","A l’entrada principal de l’institut, al costat del laboratori"],"lluna-3":["Els telescopis arribaran tard","Els telescopis del centre arribaran més tard del que estava previst"],"lluna-4":["Quan ja haja acabat l’activitat","Quan l’activitat ja haja acabat i el grup torne a casa"],"lluna-5":["Anar a la porta nord","Anar a la porta nord del poliesportiu abans de l’hora indicada"],"lluna-6":["Canviar el lloc de trobada","Canviar el lloc de trobada si el poliesportiu està ocupat"],"lluna-7":["Per prohibir portar prismàtics","Per prohibir que les famílies porten prismàtics o telescopis propis"]};
 for(const r of readings)for(const q of r.questions){const t=distractorTweaks[q.id];if(t){const i=q.options.indexOf(t[0]);if(i>=0)q.options[i]=t[1]}}
 for(const r of readings)for(const q of r.questions){const replacement=longerDistractors[q.id];if(replacement){const index=q.options.reduce((best,option,i)=>i!==q.correct&&option.length>q.options[best].length?i:best,q.options.findIndex((_,i)=>i!==q.correct));q.options[index]=replacement}}
+for(const r of readings)for(const q of r.questions){
+ const revision=questionRevisions[q.id];
+ if(typeof revision==="string"){q.prompt=revision}
+ else if(revision){
+  q.prompt=revision.prompt;
+  if(revision.answer!==undefined){
+   const distractors=revision.distractors||q.options.filter((_,i)=>i!==q.correct);
+   q.answer=revision.answer;
+   q.options=[...distractors];
+   q.options.splice(q.correct,0,q.answer)
+  }
+ }
+}
+
 const defaultState={diagnosticDone:false,level:2,streak:0,totalAnswered:0,mastery:{locate:50,infer:50,integrate:50,reflect:50},history:[],completed:[],lastPromotionAt:0,session:null};
 let state=loadState();let view="home";let activity=null;let bankOpen=false;let bankQuery="";let bankType="Totes";let bankPage=0;
 function loadState(){try{const saved=JSON.parse(localStorage.getItem("compren-state")||"{}");const loaded={...defaultState,...saved};if(!loaded.diagnosticDone&&loaded.totalAnswered===0)loaded.mastery={...defaultState.mastery};return loaded}catch{return structuredClone(defaultState)}}
