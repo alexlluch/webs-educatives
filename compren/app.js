@@ -101,18 +101,31 @@ const distractorTweaks={
 "robot-1":["Vidre, fusta i tela","Vidre, fusta i diferents tipus de tela de colors"],"robot-3":["La càmera no detecta colors","La càmera deixa de detectar els colors quan els envasos estan bruts"],"robot-4":["Usar només objectes nets","Usar únicament objectes nets, nous i sense cap deformació"],"robot-5":["Pregunta, espera i etiqueta","Pregunta a l’equip, espera una resposta i etiqueta cada residu"],"robot-6":["Els estudiants volen substituir els contenidors","Els estudiants volen substituir tots els contenidors per un sol robot"],"robot-8":["La tecnologia resol per si sola el problema","La tecnologia resol per si sola tot el problema dels residus urbans"],
 "ruta-5":["En problemes i solucions mecàniques","En una llista de problemes mecànics i les seues possibles solucions"],"ruta-6":["Aprendre a reparar una bicicleta","Aprendre a reparar qualsevol avaria d’una bicicleta durant el trajecte"],"ruta-7":["Cal eixir exactament dos minuts abans","Cal eixir exactament dos minuts abans per evitar qualsevol perill"],"ruta-8":["Per contar una experiència passada","Per contar una experiència passada del ciclista que escriu la guia"],
 "lluna-2":["A l’entrada de l’institut","A l’entrada principal de l’institut, al costat del laboratori"],"lluna-3":["Els telescopis arribaran tard","Els telescopis del centre arribaran més tard del que estava previst"],"lluna-4":["Quan ja haja acabat l’activitat","Quan l’activitat ja haja acabat i el grup torne a casa"],"lluna-5":["Anar a la porta nord","Anar a la porta nord del poliesportiu abans de l’hora indicada"],"lluna-6":["Canviar el lloc de trobada","Canviar el lloc de trobada si el poliesportiu està ocupat"],"lluna-7":["Per prohibir portar prismàtics","Per prohibir que les famílies porten prismàtics o telescopis propis"]};
-for(const r of readings)for(const q of r.questions){const t=distractorTweaks[q.id];if(t){const i=q.options.indexOf(t[0]);if(i>=0)q.options[i]=t[1]}}
-for(const r of readings)for(const q of r.questions){const replacement=longerDistractors[q.id];if(replacement){const index=q.options.reduce((best,option,i)=>i!==q.correct&&option.length>q.options[best].length?i:best,q.options.findIndex((_,i)=>i!==q.correct));q.options[index]=replacement}}
+const normalizeForMatch=value=>String(value).normalize("NFC").replace(/['’‘ʼ`]/g,"’").replace(/[“”«»]/g,'"').replace(/\s+/g," ").trim().toLocaleLowerCase("ca");
 for(const r of readings)for(const q of r.questions){
  const revision=questionRevisions[q.id];
- if(typeof revision==="string"){q.prompt=revision}
+ let optionsOverridden=false;
+ if(typeof revision==="string")q.prompt=revision;
  else if(revision){
   q.prompt=revision.prompt;
   if(revision.answer!==undefined){
    const distractors=revision.distractors||q.options.filter((_,i)=>i!==q.correct);
    q.answer=revision.answer;
    q.options=[...distractors];
-   q.options.splice(q.correct,0,q.answer)
+   q.options.splice(q.correct,0,q.answer);
+   optionsOverridden=true;
+  }
+ }
+ if(!optionsOverridden){
+  const tweak=distractorTweaks[q.id];
+  if(tweak){
+   const index=q.options.findIndex(option=>normalizeForMatch(option)===normalizeForMatch(tweak[0]));
+   if(index>=0)q.options[index]=tweak[1];
+  }
+  const replacement=longerDistractors[q.id];
+  if(replacement){
+   const index=q.options.reduce((best,option,i)=>i!==q.correct&&option.length>q.options[best].length?i:best,q.options.findIndex((_,i)=>i!==q.correct));
+   if(index>=0)q.options[index]=replacement;
   }
  }
 }
