@@ -33,7 +33,7 @@ const readingEnrichments={
   "biblioteca": "L’enquesta indica que hi ha interés, però les 430 respostes no permeten saber si totes les persones del barri necessiten el mateix horari. El període de prova aporta una altra mena d’evidència: quantes persones utilitzen realment les hores afegides.\n\nDe les 430 persones enquestades, 160 digueren que probablement usarien l’horari nou. Eixa intenció no és encara un recompte de visites reals.",
   "pont": "La fletxa no havia sigut dibuixada expressament: apareixia quan el sol i la peça metàl·lica ocupaven una posició concreta. La capsa, en canvi, sí que havia sigut deixada allí per algú. Separar les dues pistes va ajudar Biel i Aina a no confondre coincidència amb missatge.\n\nA les 17.30, l’ombra d’un arbre cobria una part de l’aigua; la fletxa sobre la barana apareixia just abans de les cinc. La nota de la capsa, no la peça del fanal, identificava el club de jardineria.",
   "assemblea": "L’acord combina propostes que al principi semblaven incompatibles, però no demostra que cada grup haja obtingut tot el que volia. Les quatre setmanes de prova convertixen la decisió en una hipòtesi revisable: les observacions i les opinions recollides serviran per a decidir si cal canviar la distribució.\n\nUna primera proposta situava bancs davant de l’eixida d’emergència, però l’acta la descarta. La zona de lectura acordada queda al costat dels arbres.",
-  "teatre": "La reserva, doncs, no equival a un seient garantit fins a l’inici de l’obra: hi ha un límit horari per a conservar-lo. La conversa posterior també forma part de l’activitat, de manera que convé calcular l’arribada en relació amb l’obertura de portes i no sols amb l’inici de la representació.\n\nLes portes s’obrin a les 18.00, però això no allarga la garantia de seient més enllà de les 18.20. La llista d’espera només rep un avís si queda una plaça.",
+  "teatre": "La reserva, doncs, no equival a un seient garantit fins a l’inici de l’obra: hi ha un límit horari per a conservar-lo. La conversa posterior també forma part de l’activitat, de manera que convé calcular l’arribada en relació amb l’obertura de portes i no sols amb l’inici de la representació.\n\nLes portes s’obrin a les 18.00, però això no allarga la garantia de seient més enllà de les 18.20. La llista d’espera només rep un avís si queda una plaça.\n\nLa sala té 96 butaques i una classe de dotze alumnes ha tramitat tres peticions de quatre places cadascuna. Això no canvia el límit que s’aplica a cada reserva individual.",
   "radio": "La correcció no esborra l’error inicial, però evita que continue circulant com si fora cert. El procediment nou incorpora una segona comprovació abans de l’emissió; així, la responsabilitat no depén només de la memòria de qui redacta la notícia.\n\nEls programes actuals s’emeten dos dies per setmana i duren set minuts; al principi n’hi havia un de cinc minuts cada divendres.",
   "recepta": "La recepta aprofita aliments que han sobrat, però la seua flexibilitat té un límit clar: la conservació prèvia. Afegir una verdura diferent canvia el plat; deixar l’arròs massa temps fora de la nevera canvia la situació i pot fer que ja no siga segur consumir-lo.\n\nPer a huit persones cal duplicar les quantitats de la recepta base; afegir una altra verdura és opcional. L’arròs i els cigrons s’escalfen, mentre que l’oli i la llima s’afegixen al final.",
   "esmorzar-net": "Per a valorar si la proposta es manté, la classe haurà de mirar més enllà del pes total dels residus. També convé saber si les carmanyoles prestades tornen netes, si n’hi ha prou per a qui les necessita i si la reducció es repetix en altres setmanes. Una iniciativa accessible depén tant del resultat com de les condicions per a participar-hi.\n\nLa fruita sense embolcall era una alternativa diferent del préstec: les carmanyoles les proporcionava l’institut per a qui no en podia comprar.",
@@ -57,7 +57,7 @@ const readingEnrichments={
   "corall": "Registrar temperatura, color i creixement permet seguir canvis, però les diferències entre esculls depenen també de factors locals. Una explicació prudent no atribuïx cada episodi a una causa. Reduir pressions conegudes ajuda, encara que no elimine tots els efectes de l’escalfament.\n\nEn la primera visita també anotaren la salinitat per a descriure el lloc; el seguiment mensual de l’evolució compara temperatura, color i creixement.",
   "energia": "Per avaluar si apagar equips ha reduït el consum, no basta comparar gener i desembre: poden variar les classes, la temperatura i l’ús de l’aula. Igualar algunes condicions reforça la comparació, però no elimina totes les variables. Les dades orienten la pregunta; el mètode limita la resposta.\n\nEn novembre, el centre sencer va consumir 1.210 kWh; la taula, en canvi, registra només l’aula de tecnologia. Les xifres de l’aula provenen del mesurador, no de la factura.",
   "noticia": "La captura conserva una part de la frase, però en retalla la data, l’adreça i la duració del tancament. El reenviament convertix una interrupció breu en una afirmació més extensa. Nora no pot atribuir l’origen del rumor, però sí mostrar quina versió té una font identificable.\n\nEl text B parla de tota la setmana i d’abril, però eixes duracions no apareixen en l’avís oficial. El dissabte es manté el préstec de llibres, encara que el tancament siga divendres.",
-  "pescadors": "El patró anticipa un canvi per al mercat; Vicent, en canvi, dubta de qui se’n beneficiarà. La carta no resol el debat, sinó que mostra com una innovació pot prometre millores i plantejar alhora preguntes sobre l’accés als recursos.\n\nVicent reparà una xarxa mentre esperava; la màquina de gel, en canvi, conserva el peix després de la pesca. El patró és qui anticipa l’efecte de la màquina sobre el mercat.",
+  "pescadors": "El patró anticipa un canvi per al mercat; Vicent, en canvi, dubta de qui se’n beneficiarà. La carta no resol el debat: mostra dos punts de vista sobre l’accés a una tecnologia nova.\n\nLa nota del museu situa la carta a principis del segle XX, però no identifica el vaixell ni aporta dades de vendes. Per a saber qui va poder usar la màquina i amb quin resultat, caldria comparar la carta amb altres testimonis o registres del port.",
   "abelles": "L’hotel, per tant, no és una solució general per a la davallada dels pol·linitzadors. La disponibilitat d’aliment i de refugi depén de cada espècie i del lloc concret. Si el centre no identifica quins insectes hi ha, construir-lo pot donar una impressió d’ajuda sense que siga possible comprovar-ne el benefici.\n\nEls tubs i les cavitats són parts de l’estructura; les plantes i els períodes de floració són recursos d’aliment que el grup observarà abans de construir-la.",
   "ofici": "L’èxit del taller no es pot reduir al nombre d’objectes reparats: una intervenció insegura no seria millor només perquè acabara ràpid. La decisió d’aturar-se quan falta una peça o coneixement forma part del mètode. Així, aprendre a reparar inclou també saber quan no convé continuar.\n\nEl taller municipal es reunix cada dimecres; dijous, Mar participa en una activitat de reparació de l’institut. La llum de lectura tenia un cable tallat, a més de la bombeta.",
   "mapa": "La mateixa dada pot semblar més o menys important segons el marc visual, encara que els valors no hagen canviat. Per això, llegir una representació exigix separar el fenomen mesurat de les decisions de disseny que guien la mirada. Revisar l’escala no invalida el mapa; permet entendre quina comparació facilita i quina podria exagerar.\n\nL’escala també és un element útil per a interpretar distàncies, però l’article demana revisar llegenda, data i origen abans de compartir les dades del temps.",
@@ -67,7 +67,7 @@ const readingEnrichments={
 
 const questionRevisions={
   "hort-1": {
-    "prompt": "El text també cita el magatzem de les eines. Quin espai es va convertir en hort?",
+    "prompt": "Les eines es guarden al magatzem. Quin espai va transformar l’alumnat en hort?",
     "answer": "La terrassa",
     "distractors": [
       "El magatzem de la planta baixa",
@@ -193,21 +193,21 @@ const questionRevisions={
     ]
   },
   "aigua-1": {
-    "prompt": "Si el bany supera els 150 litres i la dutxa en gasta uns 50, quin estalvi mínim aproximat representa triar la dutxa?",
-    "answer": "Més de 100 litres",
+    "prompt": "Quina xifra associa el cartell a una dutxa de cinc minuts, no al bany ni al raspallat?",
+    "answer": "Uns 50 litres",
     "distractors": [
-      "Uns 12 litres",
-      "Uns 50 litres",
-      "Més de 150 litres"
+      "Més de 150 litres",
+      "Fins a 12 litres",
+      "Un 15% del consum"
     ]
   },
   "aigua-2": {
-    "prompt": "La reducció observada és del 10% i la meta del cartell és del 15%. Quants punts percentuals falten?",
-    "answer": "5 punts percentuals",
+    "prompt": "En la primera revisió, ja s’havia observat una reducció del 10%. Quin objectiu de reducció fixa la classe per a la setmana?",
+    "answer": "15%",
     "distractors": [
-      "10 punts percentuals",
-      "15 punts percentuals",
-      "25 punts percentuals"
+      "10%",
+      "5 punts percentuals",
+      "15 litres"
     ]
   },
   "robot-1": {
@@ -220,12 +220,12 @@ const questionRevisions={
     ]
   },
   "robot-2": {
-    "prompt": "L’encert global passa del 70% al 89%; quin és l’augment, no el resultat final?",
-    "answer": "19 punts percentuals",
+    "prompt": "Quina dada descriu l’encert global després de millorar el programa, i no el resultat inicial ni la tanda només amb metall?",
+    "answer": "89%",
     "distractors": [
-      "89%",
-      "19% dels objectes",
-      "70 punts percentuals"
+      "70%",
+      "90%",
+      "19 punts percentuals"
     ]
   },
   "lluna-1": {
@@ -328,12 +328,12 @@ const questionRevisions={
     ]
   },
   "teatre-2": {
-    "prompt": "Nou alumnes necessiten places i cada petició n’admet fins a quatre. Quin és el mínim de peticions?",
-    "answer": "Tres",
+    "prompt": "La sala té 96 butaques i una classe n’ha de reservar 12. Quantes places pot incloure, com a màxim, una reserva individual?",
+    "answer": "Quatre places",
     "distractors": [
-      "Dues",
-      "Quatre",
-      "Nou"
+      "96 places",
+      "12 places",
+      "15 places"
     ]
   },
   "radio-1": {
@@ -373,12 +373,12 @@ const questionRevisions={
     ]
   },
   "esmorzar-net-1": {
-    "prompt": "El recompte passa de 38 envasos a 21. Quina és la disminució en nombre d’envasos, no el recompte final?",
-    "answer": "17 envasos menys",
+    "prompt": "Divendres quedaven 21 envasos. Quina xifra correspon al primer recompte, el del dilluns?",
+    "answer": "38 envasos",
     "distractors": [
-      "21 envasos menys",
-      "38 envasos menys",
-      "17 per cent"
+      "21 envasos",
+      "17 envasos",
+      "Una reducció del 15%"
     ]
   },
   "esmorzar-net-2": {
@@ -751,12 +751,12 @@ const questionRevisions={
     ]
   },
   "pescadors-1": {
-    "prompt": "La màquina de gel conserva el peix. Què va reparar Vicent mentre esperava l’eixida del vaixell?",
+    "prompt": "El text esmenta la màquina de gel i un dibuix dels molls. Quina tasca va fer Vicent personalment durant l’espera al port?",
     "answer": "Una xarxa amb una corda trencada",
     "distractors": [
-      "La màquina de gel",
-      "El motor del vaixell",
-      "Una caixa de peix"
+      "Va revisar la màquina de gel",
+      "Va acabar el dibuix dels molls",
+      "Va decidir l’horari del mercat"
     ]
   },
   "pescadors-2": {
@@ -932,7 +932,7 @@ const questionRevisions={
     ]
   },
   "robot-6": {
-    "prompt": "Si el robot encerta el 89% en aquestes proves, quina conclusió es pot traure sobre qualsevol residu que reba?",
+    "prompt": "Es pot concloure que el robot encertarà el 89% de les vegades davant de qualsevol residu que reba?",
     "answer": "No; el 89% descriu unes proves concretes i no garantix encerts amb qualsevol residu.",
     "distractors": [
       "Sí; un 89% garantix que només un de cada cent objectes fallarà en qualsevol situació.",
