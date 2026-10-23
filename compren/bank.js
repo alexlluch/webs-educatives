@@ -19,212 +19,845 @@ const readingExtensions={
 };
 
 const readingEnrichments={
-  "hort": "La primera collita, per tant, no serà l’únic indicador de l’èxit. L’alumnat compararà el que s’ha produït amb l’aigua emprada: una collita abundant tindria un valor diferent si haguera requerit més reg del que el depòsit pot oferir.",
-  "biblio": "Abans d’acomiadar-se, Núria va admetre que havia buscat l’entrada per curiositat. En saber l’esforç que hi havia darrere, va entendre que aquell objecte no era un simple record dins de la motxilla.",
-  "ruta": "La ruta més segura tampoc és necessàriament la que elimina qualsevol risc, perquè això és impossible en un trajecte real. Es tracta de reduir els perills previsibles i de saber com actuar si les condicions canvien.",
-  "festival": "El sorteig no elimina totes les decisions de l’organització: aplica un criteri conegut per a repartir un temps limitat. Per això, la llista definitiva és més útil que el cartell inicial per a saber qui actuarà.",
-  "tren": "La diferència entre l’hora habitual i l’hora d’aquest tren és important sobretot per a qui tinga una visita programada. Consultar l’avís abans d’eixir evita confondre l’horari general amb l’excepció d’aquest dissabte.",
-  "clau-biblio": "Quan Júlia tornà a la biblioteca, la clau ja era en mans de la bibliotecària i l’exposició començava a prendre forma. Va triar un llibre pel comentari que havia llegit en obrir-lo. La troballa no li va revelar un misteri: li va donar una raó per a començar una lectura.",
-  "excursio-oratge": "La decisió definitiva no es pren només a partir de la previsió general: el missatge fixa un moment concret per a valorar la pluja i un canal per a avisar les famílies. Eixa separació evita que una possibilitat —que ploga molt— es confonga amb un canvi ja confirmat. Fins que arribe l’avís, l’excursió continua prevista.",
-  "aigua": "La lectura del comptador permet comparar períodes, però no explica per si sola per què ha canviat el consum. Si hi ha hagut més persones a casa o s’ha regat més, la diferència pot tindre diverses causes; les anotacions ajuden a interpretar-la amb més justícia.",
-  "robot": "El 89% descriu el resultat d’unes proves concretes, no una garantia que el robot classifique igual de bé qualsevol residu. Publicar els errors permet saber en quines condicions falla i valorar si la millora continua quan canvien els objectes.",
-  "lluna": "El correu no promet que l’observació es farà en qualsevol circumstància: fixa una hora per a comunicar l’ajornament i una altra per a començar l’activitat. Les famílies han de distingir entre el canvi d’horari ja confirmat i la decisió que encara depén de l’oratge.",
-  "mascota": "La visita al refugi serveix també per a comprovar si les expectatives de la família coincidixen amb les necessitats de l’animal. Si no coincidixen, ajornar l’adopció pot ser una decisió responsable, encara que la família haja anat amb la intenció d’emportar-se’n un.",
-  "biblioteca": "L’enquesta indica que hi ha interés, però les 430 respostes no permeten saber si totes les persones del barri necessiten el mateix horari. El període de prova aporta una altra mena d’evidència: quantes persones utilitzen realment les hores afegides.",
-  "pont": "La fletxa no havia sigut dibuixada expressament: apareixia quan el sol i la peça metàl·lica ocupaven una posició concreta. La capsa, en canvi, sí que havia sigut deixada allí per algú. Separar les dues pistes va ajudar Biel i Aina a no confondre coincidència amb missatge.",
-  "assemblea": "L’acord combina propostes que al principi semblaven incompatibles, però no demostra que cada grup haja obtingut tot el que volia. Les quatre setmanes de prova convertixen la decisió en una hipòtesi revisable: les observacions i les opinions recollides serviran per a decidir si cal canviar la distribució.",
-  "teatre": "La reserva, doncs, no equival a un seient garantit fins a l’inici de l’obra: hi ha un límit horari per a conservar-lo. La conversa posterior també forma part de l’activitat, de manera que convé calcular l’arribada en relació amb l’obertura de portes i no sols amb l’inici de la representació.",
-  "radio": "La correcció no esborra l’error inicial, però evita que continue circulant com si fora cert. El procediment nou incorpora una segona comprovació abans de l’emissió; així, la responsabilitat no depén només de la memòria de qui redacta la notícia.",
-  "recepta": "La recepta aprofita aliments que han sobrat, però la seua flexibilitat té un límit clar: la conservació prèvia. Afegir una verdura diferent canvia el plat; deixar l’arròs massa temps fora de la nevera canvia la situació i pot fer que ja no siga segur consumir-lo.",
-  "esmorzar-net": "Per a valorar si la proposta es manté, la classe haurà de mirar més enllà del pes total dels residus. També convé saber si les carmanyoles prestades tornen netes, si n’hi ha prou per a qui les necessita i si la reducció es repetix en altres setmanes. Una iniciativa accessible depén tant del resultat com de les condicions per a participar-hi.",
-  "equip-teatre": "El repartiment de tasques va funcionar perquè no van confondre el desig d’ocupar un paper amb l’única manera de contribuir. Això no significa que totes les persones preferiren la decisió final; significa que van escoltar habilitats i dificultats abans de repartir responsabilitats. La peça caiguda va posar a prova eixe acord col·lectiu.",
-  "videojoc": "La pausa no funciona com una fórmula automàtica: cal observar què ha canviat en la manera de jugar. Si en tornar es repetix el mateix moviment sense pensar, potser el problema no era només el cansament, sinó que encara falta comprendre l’obstacle.",
-  "mur": "Alba havia pres el silenci per un secret individual. En descobrir la iniciativa col·lectiva, va canviar la manera d’acostar-s’hi. El mural no va resoldre les discussions, però va oferir un espai on conversar.",
-  "micro": "La dificultat de comparar estudis no vol dir que les dades siguen inútils; obliga a preguntar-se com s’han obtingut. Una xifra sobre partícules en l’aigua no respon necessàriament una pregunta sobre els efectes en un organisme. Distingir entre presència, exposició i conseqüència evita convertir una investigació parcial en una conclusió general.",
-  "son": "—Això vol dir que totes les persones adolescents dormen igual?\n—No. El retard és una tendència, no una explicació completa. Les obligacions i altres factors també influïxen. Una recomanació general orienta, però no substituïx una valoració individual quan el cansament persistix.",
-  "merenda": "La comparació és més fiable quan es mantenen constants les quantitats i es consulta tota la informació, no només una afirmació destacada de l’envàs. Una llista més curta tampoc és necessàriament millor en tots els casos: la decisió depén del producte, de la quantitat i de les necessitats de cada persona.",
-  "marees": "Per parlar d’una tendència cal separar les oscil·lacions que es repetixen cada any dels canvis que persisteixen durant més temps. Les fotografies mensuals aporten observacions, però comparar-les amb el vent i els temporals permet explicar-les millor. La conclusió inicial de l’alumnat descrivia una imatge real, però generalitzava més del que les proves permetien.",
-  "llibre": "La ressenya no presenta el ritme pausat com un defecte universal: explica per a quin tipus de lector pot resultar un obstacle i per a qui pot ser una virtut. El judici final depén, així, de les expectatives de lectura. La mateixa característica —la descripció extensa— pot sostindre l’ambient o alentir l’acció.",
-  "diari": "En rellegir el que ha escrit, la narradora pot distingir entre el que sabia al matí i el que ha comprés després de parlar amb Martina. L’ajornament no havia tancat la possibilitat de l’excursió; la decepció, en canvi, sí que havia condicionat la seua primera resposta.",
-  "rutes": "El marge de trenta-cinc minuts no resol tota la decisió: la ruta B dura vint minuts i la A, setze, però la previsió pot alterar quina és viable. El grup ha de ponderar la puntualitat, els encreuaments i el tram inundable; comparar només distàncies deixaria fora dades decisives.",
-  "llavors": "Mantindre iguals el test, la finestra i la quantitat d’aigua fa més útil la comparació, però no revela quina espècie hi havia en cada sobre. Júlia pot descriure quan va germinar cada llavor; per a explicar per què ho va fer, necessitaria informació que el seu experiment no proporciona.",
-  "llum": "La llum provisional respon a la urgència del punt més fosc, mentre que la revisió del pas de vianants és una petició diferent. Que les dues demandes apareguen juntes en la notícia no prova que tinguen la mateixa causa ni que l’ajuntament ja haja aprovat totes dues actuacions.",
-  "riu": "Deixar els troncs no és una omissió accidental, sinó una decisió basada en la funció que poden tindre per a la fauna. La jornada combina, per tant, una intervenció visible —retirar residus— amb una restricció menys evident: no alterar elements naturals que també formen part de l’hàbitat.",
-  "cova": "Les fotografies descriuen formes; la datació dels sediments les situa en el temps. Cap de les dues proves identifica qui deixà les marques. Publicar també els límits del mètode permet que altres investigadores valoren si les conclusions són justificades.",
-  "algoritme": "Com més interaccions genera una recomanació, més dades rep la plataforma sobre els interessos de l’usuari; aquestes dades poden influir en suggeriments posteriors. Així es forma un circuit que reforça algunes preferències sense que l’usuari les trie totes de manera conscient. Eixir d’eixe circuit no exigix rebutjar la tecnologia, sinó ampliar deliberadament les fonts consultades.",
-  "rumor": "Confirmar l’examen va resoldre el dubte pràctic, però no va revelar qui havia creat la captura. El canal oficial aclarí l’avís; l’origen de la imatge continuava sense proves.",
-  "museu": "La capa on aparegué la gerreta ajuda a situar-la entre altres restes, però no identifica qui la va fabricar ni utilitzar. La cartel·la separa la descripció de la hipòtesi; així, la reconstrucció no es confon amb una certesa.",
-  "corall": "Registrar temperatura, color i creixement permet seguir canvis, però les diferències entre esculls depenen també de factors locals. Una explicació prudent no atribuïx cada episodi a una causa. Reduir pressions conegudes ajuda, encara que no elimine tots els efectes de l’escalfament.",
-  "energia": "Per avaluar si apagar equips ha reduït el consum, no basta comparar gener i desembre: poden variar les classes, la temperatura i l’ús de l’aula. Igualar algunes condicions reforça la comparació, però no elimina totes les variables. Les dades orienten la pregunta; el mètode limita la resposta.",
-  "noticia": "La captura conserva una part de la frase, però en retalla la data, l’adreça i la duració del tancament. El reenviament convertix una interrupció breu en una afirmació més extensa. Nora no pot atribuir l’origen del rumor, però sí mostrar quina versió té una font identificable.",
-  "pescadors": "El patró anticipa un canvi per al mercat; Vicent, en canvi, dubta de qui se’n beneficiarà. La carta no resol el debat, sinó que mostra com una innovació pot prometre millores i plantejar alhora preguntes sobre l’accés als recursos.",
-  "abelles": "L’hotel, per tant, no és una solució general per a la davallada dels pol·linitzadors. La disponibilitat d’aliment i de refugi depén de cada espècie i del lloc concret. Si el centre no identifica quins insectes hi ha, construir-lo pot donar una impressió d’ajuda sense que siga possible comprovar-ne el benefici.",
-  "ofici": "L’èxit del taller no es pot reduir al nombre d’objectes reparats: una intervenció insegura no seria millor només perquè acabara ràpid. La decisió d’aturar-se quan falta una peça o coneixement forma part del mètode. Així, aprendre a reparar inclou també saber quan no convé continuar.",
-  "mapa": "La mateixa dada pot semblar més o menys important segons el marc visual, encara que els valors no hagen canviat. Per això, llegir una representació exigix separar el fenomen mesurat de les decisions de disseny que guien la mirada. Revisar l’escala no invalida el mapa; permet entendre quina comparació facilita i quina podria exagerar.",
-  "cartes": "L’alumna prioritza poder reaccionar davant d’un canvi; el professor vol reduir distraccions i problemes de privacitat. El telèfon del centre facilita el contacte, però no resol l’ús del mòbil durant la visita. La norma haurà d’explicitar quin criteri pesa més.",
-  "bosc": "Els mapes no reproduïen el bosc amb exactitud: cadascú havia sentit sons diferents i els havia situat segons la seua atenció. Comparar-los mostrava què quedava fora de cada observació."
+  "hort": "La primera collita, per tant, no serà l’únic indicador de l’èxit. L’alumnat compararà el que s’ha produït amb l’aigua emprada: una collita abundant tindria un valor diferent si haguera requerit més reg del que el depòsit pot oferir.\n\nEl magatzem de la planta baixa guarda les eines, i 2n A revisa allí el compost cada dijous; la plantació de 1r continua a la terrassa els dimarts.",
+  "biblio": "Abans d’acomiadar-se, Núria va admetre que havia buscat l’entrada per curiositat. En saber l’esforç que hi havia darrere, va entendre que aquell objecte no era un simple record dins de la motxilla.\n\nLa motxilla de Núria quedà damunt d’una cadira en arribar a casa; la blava era al seu costat. La menció «2n A» estava en una pàgina de la llibreta, no en l’etiqueta.",
+  "ruta": "La ruta més segura tampoc és necessàriament la que elimina qualsevol risc, perquè això és impossible en un trajecte real. Es tracta de reduir els perills previsibles i de saber com actuar si les condicions canvien.\n\nAl capvespre, la guia recomana una armilla reflectora. Els llums davanter i posterior s’encenen de nit; són dues indicacions diferents.",
+  "festival": "El sorteig no elimina totes les decisions de l’organització: aplica un criteri conegut per a repartir un temps limitat. Per això, la llista definitiva és més útil que el cartell inicial per a saber qui actuarà.\n\nEl micròfon obert s’instal·la al racó de la biblioteca, però la inscripció es fa al taulell de la biblioteca abans de dimarts. Si plou, el lloc canvia i l’hora es manté.",
+  "tren": "La diferència entre l’hora habitual i l’hora d’aquest tren és important sobretot per a qui tinga una visita programada. Consultar l’avís abans d’eixir evita confondre l’horari general amb l’excepció d’aquest dissabte.\n\nUn avís per a diumenge dona hores diferents; la taula d’ací correspon només a dissabte i a la línia M2. La restricció de bicicletes és de vagó, no d’hora.",
+  "clau-biblio": "Quan Júlia tornà a la biblioteca, la clau ja era en mans de la bibliotecària i l’exposició començava a prendre forma. Va triar un llibre pel comentari que havia llegit en obrir-lo. La troballa no li va revelar un misteri: li va donar una raó per a començar una lectura.\n\nJúlia va trobar la clau al pati i la deixà a consergeria; més tard la bibliotecària la recuperà. Els llibres per a l’exposició es col·locaren en una taula, no dins de l’armari.",
+  "excursio-oratge": "La decisió definitiva no es pren només a partir de la previsió general: el missatge fixa un moment concret per a valorar la pluja i un canal per a avisar les famílies. Eixa separació evita que una possibilitat —que ploga molt— es confonga amb un canvi ja confirmat. Fins que arribe l’avís, l’excursió continua prevista.\n\nLes 8.00 són l’hora de revisar el correu, les 8.45 la trobada, les 9.00 l’eixida i les 9.15 el moment de decidir si plou molt.",
+  "aigua": "La lectura del comptador permet comparar períodes, però no explica per si sola per què ha canviat el consum. Si hi ha hagut més persones a casa o s’ha regat més, la diferència pot tindre diverses causes; les anotacions ajuden a interpretar-la amb més justícia.\n\nEn la primera revisió, el consum havia baixat un 10%; l’objectiu de la setmana continuava sent un 15%. La diferència entre tots dos percentatges encara s’havia d’explicar.",
+  "robot": "El 89% descriu el resultat d’unes proves concretes, no una garantia que el robot classifique igual de bé qualsevol residu. Publicar els errors permet saber en quines condicions falla i valorar si la millora continua quan canvien els objectes.\n\nEn una tanda curta només amb peces de metall, l’encert va arribar al 90%; eixa xifra no era el resultat global del robot.",
+  "lluna": "El correu no promet que l’observació es farà en qualsevol circumstància: fixa una hora per a comunicar l’ajornament i una altra per a començar l’activitat. Les famílies han de distingir entre el canvi d’horari ja confirmat i la decisió que encara depén de l’oratge.\n\nL’avís inicial anunciava les 21.00 i la porta principal de l’institut. El missatge nou fixa les 21.30 i la porta nord del poliesportiu; les 19.00 només és l’hora per a avisar si plou.",
+  "mascota": "La visita al refugi serveix també per a comprovar si les expectatives de la família coincidixen amb les necessitats de l’animal. Si no coincidixen, ajornar l’adopció pot ser una decisió responsable, encara que la família haja anat amb la intenció d’emportar-se’n un.\n\nL’espai de casa és només un dels factors: el temps disponible i les despeses veterinàries també compten. Una voluntària pot ensenyar les instal·lacions, però el personal del refugi pot explicar el caràcter i la història de cada animal.",
+  "biblioteca": "L’enquesta indica que hi ha interés, però les 430 respostes no permeten saber si totes les persones del barri necessiten el mateix horari. El període de prova aporta una altra mena d’evidència: quantes persones utilitzen realment les hores afegides.\n\nDe les 430 persones enquestades, 160 digueren que probablement usarien l’horari nou. Eixa intenció no és encara un recompte de visites reals.",
+  "pont": "La fletxa no havia sigut dibuixada expressament: apareixia quan el sol i la peça metàl·lica ocupaven una posició concreta. La capsa, en canvi, sí que havia sigut deixada allí per algú. Separar les dues pistes va ajudar Biel i Aina a no confondre coincidència amb missatge.\n\nA les 17.30, l’ombra d’un arbre cobria una part de l’aigua; la fletxa sobre la barana apareixia just abans de les cinc. La nota de la capsa, no la peça del fanal, identificava el club de jardineria.",
+  "assemblea": "L’acord combina propostes que al principi semblaven incompatibles, però no demostra que cada grup haja obtingut tot el que volia. Les quatre setmanes de prova convertixen la decisió en una hipòtesi revisable: les observacions i les opinions recollides serviran per a decidir si cal canviar la distribució.\n\nUna primera proposta situava bancs davant de l’eixida d’emergència, però l’acta la descarta. La zona de lectura acordada queda al costat dels arbres.",
+  "teatre": "La reserva, doncs, no equival a un seient garantit fins a l’inici de l’obra: hi ha un límit horari per a conservar-lo. La conversa posterior també forma part de l’activitat, de manera que convé calcular l’arribada en relació amb l’obertura de portes i no sols amb l’inici de la representació.\n\nLes portes s’obrin a les 18.00, però això no allarga la garantia de seient més enllà de les 18.20. La llista d’espera només rep un avís si queda una plaça.",
+  "radio": "La correcció no esborra l’error inicial, però evita que continue circulant com si fora cert. El procediment nou incorpora una segona comprovació abans de l’emissió; així, la responsabilitat no depén només de la memòria de qui redacta la notícia.\n\nEls programes actuals s’emeten dos dies per setmana i duren set minuts; al principi n’hi havia un de cinc minuts cada divendres.",
+  "recepta": "La recepta aprofita aliments que han sobrat, però la seua flexibilitat té un límit clar: la conservació prèvia. Afegir una verdura diferent canvia el plat; deixar l’arròs massa temps fora de la nevera canvia la situació i pot fer que ja no siga segur consumir-lo.\n\nPer a huit persones cal duplicar les quantitats de la recepta base; afegir una altra verdura és opcional. L’arròs i els cigrons s’escalfen, mentre que l’oli i la llima s’afegixen al final.",
+  "esmorzar-net": "Per a valorar si la proposta es manté, la classe haurà de mirar més enllà del pes total dels residus. També convé saber si les carmanyoles prestades tornen netes, si n’hi ha prou per a qui les necessita i si la reducció es repetix en altres setmanes. Una iniciativa accessible depén tant del resultat com de les condicions per a participar-hi.\n\nLa fruita sense embolcall era una alternativa diferent del préstec: les carmanyoles les proporcionava l’institut per a qui no en podia comprar.",
+  "equip-teatre": "El repartiment de tasques va funcionar perquè no van confondre el desig d’ocupar un paper amb l’única manera de contribuir. Això no significa que totes les persones preferiren la decisió final; significa que van escoltar habilitats i dificultats abans de repartir responsabilitats. La peça caiguda va posar a prova eixe acord col·lectiu.\n\nPau volia el paper principal al principi, però la decisió final fou un personatge breu; Amina i Roger també acabaren en tasques diferents de la primera disputa.",
+  "videojoc": "La pausa no funciona com una fórmula automàtica: cal observar què ha canviat en la manera de jugar. Si en tornar es repetix el mateix moviment sense pensar, potser el problema no era només el cansament, sinó que encara falta comprendre l’obstacle.\n\nEl text diferencia la frustració de la falta d’atenció: repetir errors pot ser un senyal per a parar. Mirar lluny descansa la vista; beure aigua respon a una altra necessitat.",
+  "mur": "Alba havia pres el silenci per un secret individual. En descobrir la iniciativa col·lectiva, va canviar la manera d’acostar-s’hi. El mural no va resoldre les discussions, però va oferir un espai on conversar.\n\nEl dijous, després de la proposta d’Alba, el grup va esbossar un banc pintat. Omar va entrar per la porta del gimnàs mentre Alba observava darrere d’una columna.",
+  "micro": "La dificultat de comparar estudis no vol dir que les dades siguen inútils; obliga a preguntar-se com s’han obtingut. Una xifra sobre partícules en l’aigua no respon necessàriament una pregunta sobre els efectes en un organisme. Distingir entre presència, exposició i conseqüència evita convertir una investigació parcial en una conclusió general.\n\nEl projecte de l’institut prendrà mostres només en un tram del riu, encara que se n’han trobat en altres ambients. Un fragment de cinc mil·límetres exactes no és de menys de cinc.",
+  "son": "—Això vol dir que totes les persones adolescents dormen igual?\n—No. El retard és una tendència, no una explicació completa. Les obligacions i altres factors també influïxen. Una recomanació general orienta, però no substituïx una valoració individual quan el cansament persistix.\n\nL’entrevistat diferencia dormir més el cap de setmana de l’hàbit de fer servir pantalles fins tard. Com a canvi concret, recomana deixar el mòbil fora del llit; una aplicació només mostra dades.",
+  "merenda": "La comparació és més fiable quan es mantenen constants les quantitats i es consulta tota la informació, no només una afirmació destacada de l’envàs. Una llista més curta tampoc és necessàriament millor en tots els casos: la decisió depén del producte, de la quantitat i de les necessitats de cada persona.\n\nUn paquet destaca la paraula «casolà» i l’altre anuncia més fibra, però cap missatge de la part frontal canvia l’ordre dels ingredients ni la base comuna de comparació.",
+  "marees": "Per parlar d’una tendència cal separar les oscil·lacions que es repetixen cada any dels canvis que persisteixen durant més temps. Les fotografies mensuals aporten observacions, però comparar-les amb el vent i els temporals permet explicar-les millor. La conclusió inicial de l’alumnat descrivia una imatge real, però generalitzava més del que les proves permetien.\n\nUna alumna també va fotografiar la platja des de les roques, però eixa imatge puntual no formava part de la sèrie mensual feta des del mateix punt.",
+  "llibre": "La ressenya no presenta el ritme pausat com un defecte universal: explica per a quin tipus de lector pot resultar un obstacle i per a qui pot ser una virtut. El judici final depén, així, de les expectatives de lectura. La mateixa característica —la descripció extensa— pot sostindre l’ambient o alentir l’acció.\n\nEl pare de Lídia també dibuixa un plànol actual per a trobar el camí, però els mapes que inicien les visites als veïns són els que va dibuixar el seu iaio.",
+  "diari": "En rellegir el que ha escrit, la narradora pot distingir entre el que sabia al matí i el que ha comprés després de parlar amb Martina. L’ajornament no havia tancat la possibilitat de l’excursió; la decepció, en canvi, sí que havia condicionat la seua primera resposta.\n\nMartina portava una càmera per a fotografiar els núvols; la narradora havia preparat el quadern de dibuix i després va dibuixar el riu a casa.",
+  "rutes": "El marge de trenta-cinc minuts no resol tota la decisió: la ruta B dura vint minuts i la A, setze, però la previsió pot alterar quina és viable. El grup ha de ponderar la puntualitat, els encreuaments i el tram inundable; comparar només distàncies deixaria fora dades decisives.\n\nLa ruta A és més curta, però té dos encreuaments; la B és més llarga i en té un. La distància i el nombre de cruïlles afavorixen opcions diferents.",
+  "llavors": "Mantindre iguals el test, la finestra i la quantitat d’aigua fa més útil la comparació, però no revela quina espècie hi havia en cada sobre. Júlia pot descriure quan va germinar cada llavor; per a explicar per què ho va fer, necessitaria informació que el seu experiment no proporciona.\n\nA més dels tres testos amb llavors, Júlia en va deixar un quart sense plantar com a control. Per tant, el nombre de testos no coincidix amb el de mostres sembrades.",
+  "llum": "La llum provisional respon a la urgència del punt més fosc, mentre que la revisió del pas de vianants és una petició diferent. Que les dues demandes apareguen juntes en la notícia no prova que tinguen la mateixa causa ni que l’ajuntament ja haja aprovat totes dues actuacions.\n\nHi havia dos fanals avariats, però l’ajuntament instal·là una sola llum provisional. La reparació de dimecres es va ajornar i ara es preveu per a divendres si el temps ho permet.",
+  "riu": "Deixar els troncs no és una omissió accidental, sinó una decisió basada en la funció que poden tindre per a la fauna. La jornada combina, per tant, una intervenció visible —retirar residus— amb una restricció menys evident: no alterar elements naturals que també formen part de l’hàbitat.\n\nEl grup va ser al lloc de nou a dotze, però dedicà dues hores a retirar residus; la resta del temps va servir per a organitzar-se i anotar el resultat.",
+  "cova": "Les fotografies descriuen formes; la datació dels sediments les situa en el temps. Cap de les dues proves identifica qui deixà les marques. Publicar també els límits del mètode permet que altres investigadores valoren si les conclusions són justificades.\n\nL’equip també va fer fotografies amb llum frontal per a documentar la paret; les formes de dits i talons només es van distingir amb llum lateral.",
+  "algoritme": "Com més interaccions genera una recomanació, més dades rep la plataforma sobre els interessos de l’usuari; aquestes dades poden influir en suggeriments posteriors. Així es forma un circuit que reforça algunes preferències sense que l’usuari les trie totes de manera conscient. Eixir d’eixe circuit no exigix rebutjar la tecnologia, sinó ampliar deliberadament les fonts consultades.\n\nEn l’exemple, el color o la marca del mòbil no són les pistes descrites: ho són les interaccions, com el temps de visualització, els «m’agrada» i les cerques.",
+  "rumor": "Confirmar l’examen va resoldre el dubte pràctic, però no va revelar qui havia creat la captura. El canal oficial aclarí l’avís; l’origen de la imatge continuava sense proves.\n\nLa captura va aparéixer a les 8.00, però els deu minuts es compten des de la consulta pel canal oficial fins a la resposta. El debat del grup va continuar després.",
+  "museu": "La capa on aparegué la gerreta ajuda a situar-la entre altres restes, però no identifica qui la va fabricar ni utilitzar. La cartel·la separa la descripció de la hipòtesi; així, la reconstrucció no es confon amb una certesa.\n\nLa mostra actual s’obrí el 2026: eixa data no és la de l’excavació. El segle XIV descriu l’època de la gerreta, mentre que 2019 és l’any de la recuperació.",
+  "corall": "Registrar temperatura, color i creixement permet seguir canvis, però les diferències entre esculls depenen també de factors locals. Una explicació prudent no atribuïx cada episodi a una causa. Reduir pressions conegudes ajuda, encara que no elimine tots els efectes de l’escalfament.\n\nEn la primera visita també anotaren la salinitat per a descriure el lloc; el seguiment mensual de l’evolució compara temperatura, color i creixement.",
+  "energia": "Per avaluar si apagar equips ha reduït el consum, no basta comparar gener i desembre: poden variar les classes, la temperatura i l’ús de l’aula. Igualar algunes condicions reforça la comparació, però no elimina totes les variables. Les dades orienten la pregunta; el mètode limita la resposta.\n\nEn novembre, el centre sencer va consumir 1.210 kWh; la taula, en canvi, registra només l’aula de tecnologia. Les xifres de l’aula provenen del mesurador, no de la factura.",
+  "noticia": "La captura conserva una part de la frase, però en retalla la data, l’adreça i la duració del tancament. El reenviament convertix una interrupció breu en una afirmació més extensa. Nora no pot atribuir l’origen del rumor, però sí mostrar quina versió té una font identificable.\n\nEl text B parla de tota la setmana i d’abril, però eixes duracions no apareixen en l’avís oficial. El dissabte es manté el préstec de llibres, encara que el tancament siga divendres.",
+  "pescadors": "El patró anticipa un canvi per al mercat; Vicent, en canvi, dubta de qui se’n beneficiarà. La carta no resol el debat, sinó que mostra com una innovació pot prometre millores i plantejar alhora preguntes sobre l’accés als recursos.\n\nVicent reparà una xarxa mentre esperava; la màquina de gel, en canvi, conserva el peix després de la pesca. El patró és qui anticipa l’efecte de la màquina sobre el mercat.",
+  "abelles": "L’hotel, per tant, no és una solució general per a la davallada dels pol·linitzadors. La disponibilitat d’aliment i de refugi depén de cada espècie i del lloc concret. Si el centre no identifica quins insectes hi ha, construir-lo pot donar una impressió d’ajuda sense que siga possible comprovar-ne el benefici.\n\nEls tubs i les cavitats són parts de l’estructura; les plantes i els períodes de floració són recursos d’aliment que el grup observarà abans de construir-la.",
+  "ofici": "L’èxit del taller no es pot reduir al nombre d’objectes reparats: una intervenció insegura no seria millor només perquè acabara ràpid. La decisió d’aturar-se quan falta una peça o coneixement forma part del mètode. Així, aprendre a reparar inclou també saber quan no convé continuar.\n\nEl taller municipal es reunix cada dimecres; dijous, Mar participa en una activitat de reparació de l’institut. La llum de lectura tenia un cable tallat, a més de la bombeta.",
+  "mapa": "La mateixa dada pot semblar més o menys important segons el marc visual, encara que els valors no hagen canviat. Per això, llegir una representació exigix separar el fenomen mesurat de les decisions de disseny que guien la mirada. Revisar l’escala no invalida el mapa; permet entendre quina comparació facilita i quina podria exagerar.\n\nL’escala també és un element útil per a interpretar distàncies, però l’article demana revisar llegenda, data i origen abans de compartir les dades del temps.",
+  "cartes": "L’alumna prioritza poder reaccionar davant d’un canvi; el professor vol reduir distraccions i problemes de privacitat. El telèfon del centre facilita el contacte, però no resol l’ús del mòbil durant la visita. La norma haurà d’explicitar quin criteri pesa més.\n\nL’alumna proposa dur el seu mòbil apagat a la motxilla; el professor proposa deixar-lo a l’institut i usar el telèfon del centre per a les famílies.",
+  "bosc": "Els mapes no reproduïen el bosc amb exactitud: cadascú havia sentit sons diferents i els havia situat segons la seua atenció. Comparar-los mostrava què quedava fora de cada observació.\n\nDesprés del mapa, cada alumne també va dir quin so li havia agradat més; eixa resposta oral no mostrava on havia percebut cadascú els sons."
 };
+
 const questionRevisions={
-  "hort-1": "La notícia recupera una superfície del centre que abans no s’utilitzava. Quina part de l’edifici s’ha convertit en hort?",
-  "hort-2": "Si una alumna vol participar en la rutina setmanal de cultiu, quin dia ha de reservar-se?",
-  "biblio-1": "En reconstruir l’error de Núria, quin detall situa la motxilla blava respecte de la seua?",
-  "biblio-2": "Quina etiqueta de grup acompanya el nom de Yassin i permet identificar-lo a l’institut?",
-  "ruta-1": "Quina comprovació inicial de la guia es referix específicament a l’estat de les rodes?",
-  "ruta-2": "En quina situació indica la guia que cal encendre els llums davanter i posterior?",
-  "festival-1": "Després del micro obert de les 11.20, a quina hora comença el torn següent de l’escenari central?",
-  "festival-2": "Una alumna que vol participar en el micro obert ha d’inscriure’s en quin espai del centre?",
-  "tren-1": "El grup tria la primera eixida del matí. Quina hora d’arribada correspon a eixe tren segons la taula?",
-  "tren-2": "Quina restricció de transport ha de tindre en compte qui puja una bicicleta al tren?",
-  "clau-biblio-1": "Abans de preguntar a consergeria, quin lloc concret podria revisar algú que busca la clau perduda?",
-  "clau-biblio-2": "Quin armari no es podia preparar per a l’exposició sense recuperar la clau?",
+  "hort-1": {
+    "prompt": "El text també cita el magatzem de les eines. Quin espai es va convertir en hort?",
+    "answer": "La terrassa",
+    "distractors": [
+      "El magatzem de la planta baixa",
+      "El pati central",
+      "Un solar pròxim"
+    ]
+  },
+  "hort-2": {
+    "prompt": "Mentre 2n A revisa el compost dijous, quin dia planta 1r d’ESO?",
+    "answer": "Cada dimarts, a l’hora del pati",
+    "distractors": [
+      "Dijous, quan es revisa el compost",
+      "Cada dilluns en arribar",
+      "Els dies sense classe"
+    ]
+  },
+  "biblio-1": {
+    "prompt": "La motxilla de Núria quedà damunt d’una cadira; on era la blava respecte de la seua?",
+    "answer": "Al costat de la seua",
+    "distractors": [
+      "Damunt de la cadira",
+      "A la porta de l’institut",
+      "Dins de la consergeria"
+    ]
+  },
+  "biblio-2": {
+    "prompt": "La llibreta porta una nota de 2n A, però l’etiqueta identifica Yassin. Quin grup hi consta?",
+    "answer": "1r B",
+    "distractors": [
+      "2n A",
+      "1r A",
+      "2n B"
+    ]
+  },
+  "ruta-1": {
+    "prompt": "La guia parla tant dels frens com de les rodes. Quina comprovació correspon a les rodes?",
+    "answer": "Comprovar que tinguen aire",
+    "distractors": [
+      "Comprovar que els frens funcionen",
+      "Ajustar el casc perquè no es moga",
+      "Encendre els llums davanter i posterior"
+    ]
+  },
+  "ruta-2": {
+    "prompt": "L’armilla reflectora es recomana al capvespre. En quin moment indica la guia que cal encendre els dos llums?",
+    "answer": "De nit",
+    "distractors": [
+      "Al capvespre, només amb armilla",
+      "Sempre que s’ajuste el casc",
+      "Quan es pare a mirar el mapa"
+    ]
+  },
+  "festival-1": {
+    "prompt": "Després del micro obert al racó de la biblioteca, quin torn ve a continuació a l’escenari central?",
+    "answer": "Duo de guitarres a les 11.35",
+    "distractors": [
+      "Cor de 1r d’ESO a les 11.50",
+      "Grup de percussió a les 11.05",
+      "Micro obert a les 11.20"
+    ]
+  },
+  "festival-2": {
+    "prompt": "El micro obert se celebra al racó de la biblioteca. On cal inscriure’s abans de dimarts?",
+    "answer": "Al taulell de la biblioteca",
+    "distractors": [
+      "Al racó de la biblioteca durant el festival",
+      "Al gimnàs si plou",
+      "A l’escenari central"
+    ]
+  },
+  "tren-1": {
+    "prompt": "En l’horari de dissabte de la línia M2, a quina hora arriba el primer tren que ix a les 9.10?",
+    "answer": "A les 9.42",
+    "distractors": [
+      "A les 9.50, segons l’avís de diumenge",
+      "A les 10.42",
+      "A les 13.15"
+    ]
+  },
+  "tren-2": {
+    "prompt": "La reserva abans de dijous s’aplica als grups grans. On ha de pujar la bicicleta?",
+    "answer": "Al primer vagó",
+    "distractors": [
+      "Al vagó de cua",
+      "Només en el tren de les 9.10",
+      "En qualsevol vagó, sense subjectar-la"
+    ]
+  },
+  "clau-biblio-1": {
+    "prompt": "Júlia la deixa a consergeria després de trobar-la. On era la clau abans de tornar-la?",
+    "answer": "Davall d’un banc del pati",
+    "distractors": [
+      "A consergeria",
+      "Damunt de la taula de l’exposició",
+      "Dins de l’armari de les novetats"
+    ]
+  },
+  "clau-biblio-2": {
+    "prompt": "Els llibres es posen en una taula, però què obria la clau recuperada?",
+    "answer": "L’armari de les novetats",
+    "distractors": [
+      "La porta de la biblioteca",
+      "La taula de l’exposició",
+      "La consergeria"
+    ]
+  },
   "excursio-oratge-1": {
-    "prompt": "L’autobús eixirà a les 9.00 i el grup s’ha de trobar quinze minuts abans. A quina hora han quedat?",
+    "prompt": "Les 9.00 són l’eixida i les 9.15 l’espera si plou molt. A quina hora és la trobada prevista?",
     "answer": "A les 8.45",
     "distractors": [
       "A les 8.00",
-      "A les 9.15",
-      "A les 9.00"
+      "A les 9.00",
+      "A les 9.15"
     ]
   },
-  "excursio-oratge-2": "Quina combinació de provisions i roba recomana el correu davant de la previsió de pluja dèbil?",
-  "aigua-1": "En comparar un bany de més de 150 litres amb una dutxa d’uns 50, quin estalvi aproximat com a mínim representa la dutxa?",
-  "aigua-2": "La classe redueix el consum un 10%, però l’objectiu era un 15%. Quina distància queda fins a la meta?",
-  "robot-1": {
-    "prompt": "El grup vol provar el robot amb un tros de vidre. Quina conclusió respecta l’abast de les proves descrites?",
-    "answer": "El vidre no figura entre els materials provats.",
+  "excursio-oratge-2": {
+    "prompt": "El correu desaconsella el paraigua i condiciona el dinar al temps. Quina combinació ha de portar l’alumnat?",
+    "answer": "Esmorzar, aigua i jaqueta impermeable",
     "distractors": [
-      "El robot classificarà el vidre automàticament com a metall.",
-      "El text confirma que la càmera pot distingir qualsevol material transparent.",
-      "El vidre queda inclòs perquè tots els residus s’assemblen als exemples."
+      "Paraigua, dinar i manta",
+      "Només aigua",
+      "Bicicleta i dinar"
     ]
   },
-  "robot-2": "L’encert puja del 70% al 89%. Quin augment representa en punts percentuals?",
+  "aigua-1": {
+    "prompt": "Si el bany supera els 150 litres i la dutxa en gasta uns 50, quin estalvi mínim aproximat representa triar la dutxa?",
+    "answer": "Més de 100 litres",
+    "distractors": [
+      "Uns 12 litres",
+      "Uns 50 litres",
+      "Més de 150 litres"
+    ]
+  },
+  "aigua-2": {
+    "prompt": "La reducció observada és del 10% i la meta del cartell és del 15%. Quants punts percentuals falten?",
+    "answer": "5 punts percentuals",
+    "distractors": [
+      "10 punts percentuals",
+      "15 punts percentuals",
+      "25 punts percentuals"
+    ]
+  },
+  "robot-1": {
+    "prompt": "El robot diferencia paper, plàstic i metall; quin material queda fora de la llista descrita?",
+    "answer": "El vidre",
+    "distractors": [
+      "El metall",
+      "El paper",
+      "El plàstic"
+    ]
+  },
+  "robot-2": {
+    "prompt": "L’encert global passa del 70% al 89%; quin és l’augment, no el resultat final?",
+    "answer": "19 punts percentuals",
+    "distractors": [
+      "89%",
+      "19% dels objectes",
+      "70 punts percentuals"
+    ]
+  },
   "lluna-1": {
-    "prompt": "El nou inici és a les 21.30, mitja hora més tard que en el primer anunci. Quina era l’hora inicial?",
+    "prompt": "El correu nou canvia l’inici a les 21.30; quina hora figurava en l’anunci inicial, no a l’avís de pluja?",
     "answer": "A les 21.00",
     "distractors": [
       "A les 19.00",
       "A les 21.30",
-      "A les 22.30"
+      "A les 22.00"
     ]
   },
   "lluna-2": {
-    "prompt": "Per planificar l’activitat anunciada, quina combinació d’hora i lloc ha de tindre present la família?",
-    "answer": "A les 21.30, a la porta nord del poliesportiu.",
+    "prompt": "Quin és el punt de trobada nou a les 21.30, en lloc de l’entrada principal indicada al principi?",
+    "answer": "La porta nord del poliesportiu",
     "distractors": [
-      "A les 21.00, a la porta nord del poliesportiu.",
-      "A les 21.30, a l’entrada principal de l’institut.",
-      "A les 19.00, al costat dels telescopis del centre."
+      "La porta principal de l’institut",
+      "L’entrada sud del poliesportiu",
+      "La porta nord de l’institut"
     ]
   },
-  "mascota-1": "La família ja té prou espai a casa. Quins altres dos aspectes ha de valorar abans d’adoptar?",
-  "mascota-2": "Si vol conéixer el caràcter i la història d’un animal concret, a qui convé preguntar al refugi?",
-  "biblioteca-1": "Una persona només pot anar-hi després de les sis. Quins dos dies trobarà la biblioteca oberta fins a les huit?",
-  "biblioteca-2": {
-    "prompt": "Què representen les 430 respostes de l’enquesta, i què no demostren per si soles?",
-    "answer": "Són respostes a una enquesta; no demostren quantes persones usaran l’horari ampliat.",
+  "mascota-1": {
+    "prompt": "A més de tindre espai, quines dues condicions familiars recomana valorar abans d’adoptar?",
+    "answer": "El temps disponible i les despeses veterinàries",
     "distractors": [
-      "Són visites registrades durant els tres mesos de prova.",
-      "Són les persones que cada dimarts i dijous entraran a la biblioteca.",
-      "Són vots que demostren que tot el barri necessita les mateixes hores."
+      "L’espai de casa i la raça de l’animal",
+      "L’opinió del veïnat i el nom de l’animal",
+      "El temps lliure i l’aspecte de l’animal"
+    ]
+  },
+  "mascota-2": {
+    "prompt": "Una voluntària pot ensenyar les instal·lacions. Qui pot explicar el caràcter i la història d’un animal concret?",
+    "answer": "El personal del refugi",
+    "distractors": [
+      "Una persona visitant",
+      "Una companya de classe",
+      "La família d’un altre animal"
+    ]
+  },
+  "biblioteca-1": {
+    "prompt": "Dissabte manté l’horari habitual. Quins dos dies s’amplia l’obertura fins a les huit de la vesprada?",
+    "answer": "Dimarts i dijous",
+    "distractors": [
+      "Dilluns i dimecres",
+      "Dimarts i dissabte",
+      "Dijous i divendres"
+    ]
+  },
+  "biblioteca-2": {
+    "prompt": "L’enquesta té 430 respostes i 160 persones declaren interés. Què compten les 430 i què no proven?",
+    "answer": "Respostes a l’enquesta; no les visites reals que tindrà l’horari",
+    "distractors": [
+      "Visites ja fetes durant tres mesos",
+      "Persones que segur que aniran cada vesprada",
+      "Respostes de l’alumnat, sense famílies"
     ]
   },
   "pont-1": {
-    "prompt": "Biel vol repetir l’observació en condicions semblants. A quina hora i amb quin estat del cel li convé tornar?",
-    "answer": "Just abans de les cinc, quan el cel estiga clar.",
+    "prompt": "L’ombra de l’arbre apareix a les 17.30. Quan convé tornar per a veure la fletxa de la barana amb el cel clar?",
+    "answer": "Just abans de les cinc",
     "distractors": [
-      "A migdia, encara que els núvols tapen el sol.",
-      "Després de les sis, quan s’encenga el fanal.",
-      "A primera hora del matí, abans que isca el sol."
+      "A les 17.30",
+      "Un divendres ennuvolat",
+      "A l’eixida del matí"
     ]
   },
   "pont-2": {
-    "prompt": "Quina pista relacionava la capsa de llavors amb una activitat humana anterior?",
-    "answer": "La nota identificava el club de jardineria que havia deixat la capsa.",
+    "prompt": "La peça metàl·lica explica l’ombra. Quina pista, en canvi, vincula la capsa amb persones del passat?",
+    "answer": "La nota del club de jardineria",
     "distractors": [
-      "La forma de fletxa demostrava que el fanal contenia un mapa antic.",
-      "La peça metàl·lica incloïa una inscripció sobre un tresor.",
-      "Les llavors estaven ordenades com una ruta cap a una cova."
+      "La forma de fletxa de l’ombra",
+      "La peça del fanal",
+      "La rajola trencada"
     ]
   },
-  "assemblea-1": "Quin període acordaren per provar la nova distribució abans de revisar-la al desembre?",
-  "assemblea-2": "On es pot situar la zona de lectura sense bloquejar l’eixida d’emergència?",
-  "teatre-1": "La funció comença a les 18.30 i la reserva deixa de garantir seient a les 18.20. Si algú arriba a les 18.25, què pot assegurar-li la reserva?",
+  "assemblea-1": {
+    "prompt": "L’acta descarta una ubicació inicial i fixa una prova abans de revisar-la al desembre. Quant dura la prova?",
+    "answer": "Quatre setmanes",
+    "distractors": [
+      "Dues setmanes",
+      "Fins al final del curs",
+      "Un trimestre complet"
+    ]
+  },
+  "assemblea-2": {
+    "prompt": "Els bancs davant de l’eixida queden descartats. On s’acorda situar la zona de lectura?",
+    "answer": "Al costat dels arbres",
+    "distractors": [
+      "Davant de l’eixida d’emergència",
+      "Al mig de la pista",
+      "Al costat de la porta principal"
+    ]
+  },
+  "teatre-1": {
+    "prompt": "Les portes obrin a les 18.00, però la garantia acaba a les 18.20. Si arriba a les 18.25, què li assegura la reserva?",
+    "answer": "Ja no li garanteix un seient",
+    "distractors": [
+      "Li garanteix el seient fins a les 18.30",
+      "Li assegura un lloc en la llista d’espera",
+      "Li permet entrar abans que òbriga la sala"
+    ]
+  },
   "teatre-2": {
-    "prompt": "Un grup de nou alumnes vol reservar places. Quin és el nombre mínim de peticions que necessiten si cada reserva admet fins a quatre places?",
-    "answer": "Tres peticions com a mínim.",
+    "prompt": "Nou alumnes necessiten places i cada petició n’admet fins a quatre. Quin és el mínim de peticions?",
+    "answer": "Tres",
     "distractors": [
-      "Dues peticions, perquè cada reserva inclou cinc places.",
-      "Quatre peticions, una per cada alumne del grup.",
-      "Nou peticions, perquè només es permet una plaça per reserva."
+      "Dues",
+      "Quatre",
+      "Nou"
     ]
   },
-  "radio-1": "Abans que la ràdio passara a dos programes setmanals, quina duració i periodicitat tenia l’emissió?",
-  "radio-2": "Quin control concret va afegir l’equip per reduir el risc de repetir l’error en els horaris?",
-  "recepta-1": "La recepta és per a quatre persones. Què cal fer amb les quantitats base per a servir-ne huit mantenint les proporcions?",
-  "recepta-2": "Quins ingredients s’afegixen al final, just abans de servir, i no durant l’escalfament?",
-  "esmorzar-net-1": "El recompte baixa de 38 envasos el primer dia a 21 divendres. Quants menys n’hi havia divendres?",
-  "esmorzar-net-2": "Quina mesura va permetre participar a les famílies que no podien comprar un recipient reutilitzable?",
-  "equip-teatre-1": "Pau volia ser el protagonista. Quin paper va fer finalment després que el grup escoltara les preferències?",
+  "radio-1": {
+    "prompt": "Ara hi ha dos programes de set minuts. Abans, quina duració i periodicitat tenia l’emissió?",
+    "answer": "Cinc minuts cada divendres",
+    "distractors": [
+      "Set minuts cada divendres",
+      "Cinc minuts dos dies per setmana",
+      "Un programa de cinc minuts cada mes"
+    ]
+  },
+  "radio-2": {
+    "prompt": "Dos alumnes revisen els horaris, però amb qui contrasten la dada abans d’emetre-la?",
+    "answer": "Amb la persona responsable",
+    "distractors": [
+      "Entre ells, sense consultar ningú",
+      "Amb tot l’alumnat del centre",
+      "Amb la persona entrevistada sempre"
+    ]
+  },
+  "recepta-1": {
+    "prompt": "La recepta base és per a quatre i la verdura extra és opcional. Què cal fer per a servir-ne huit mantenint les proporcions?",
+    "answer": "Duplicar totes les quantitats base",
+    "distractors": [
+      "Duplicar només l’arròs",
+      "Afegir verdura sense canviar les quantitats",
+      "Reduir a la meitat cada ingredient"
+    ]
+  },
+  "recepta-2": {
+    "prompt": "L’arròs i els cigrons s’escalfen abans. Quins ingredients s’afegixen just abans de servir?",
+    "answer": "L’oli i unes gotes de llima",
+    "distractors": [
+      "L’arròs i els cigrons",
+      "La carlota i l’arròs",
+      "Els cigrons i la verdura"
+    ]
+  },
+  "esmorzar-net-1": {
+    "prompt": "El recompte passa de 38 envasos a 21. Quina és la disminució en nombre d’envasos, no el recompte final?",
+    "answer": "17 envasos menys",
+    "distractors": [
+      "21 envasos menys",
+      "38 envasos menys",
+      "17 per cent"
+    ]
+  },
+  "esmorzar-net-2": {
+    "prompt": "La fruita sense embolcall és una alternativa. Quina mesura oferix l’institut a qui no pot comprar un recipient?",
+    "answer": "Carmanyoles netes en préstec",
+    "distractors": [
+      "Fruita gratuïta cada dia",
+      "Un val per a comprar recipients",
+      "Un contenidor per a guardar esmorzars"
+    ]
+  },
+  "equip-teatre-1": {
+    "prompt": "Pau volia ser protagonista, però el grup va repartir les tasques segons les preferències. Quin paper va fer al final?",
+    "answer": "Un personatge breu",
+    "distractors": [
+      "El protagonista",
+      "El narrador",
+      "Dissenyar l’escenari"
+    ]
+  },
   "equip-teatre-2": {
-    "prompt": "Quina correspondència entre les preferències personals i les tasques assignades descriu millor el repartiment final?",
-    "answer": "Amina preparà els decorats, Roger narrà i Pau féu un personatge breu.",
+    "prompt": "Les primeres preferències no coincidien amb l’assignació final. Quina correspondència descriu el repartiment acordat?",
+    "answer": "Amina decorats, Roger narrador i Pau un personatge breu",
     "distractors": [
-      "Amina narrà, Roger preparà els decorats i Pau controlà la música.",
-      "Amina controlà la música, Roger féu de protagonista i Pau dissenyà l’escenari.",
-      "Amina féu un personatge breu, Roger controlà la música i Pau narrà."
+      "Amina narradora, Roger decorats i Pau protagonista",
+      "Amina música, Roger protagonista i Pau decorats",
+      "Amina decorats, Roger protagonista i Pau narrador"
     ]
   },
-  "videojoc-1": "Quin senyal de cansament descriu el text com a motiu per a interrompre una partida llarga?",
-  "videojoc-2": "Quina de les accions esmentades permet fer una pausa breu sense convertir-la en una nova activitat de pantalla?",
-  "mur-1": "Quin element s’incorpora dimecres i completa la transformació del mural iniciada dilluns?",
-  "mur-2": "Des de quin punt observa Alba els qui arriben al pati quan ja no hi ha classe?",
-  "micro-1": "Quin llindar de mida ha de complir un fragment perquè el text el considere microplàstic?",
-  "micro-2": "Quina llista reunix tots els ambients on el text diu que s’han trobat microplàstics?",
-  "son-1": "Quin hàbit nocturn relaciona l’entrevistat amb més dificultat per a adormir-se?",
-  "son-2": "Per aplicar la recomanació sobre l’espai de descans, quin dispositiu convé deixar fora del llit?",
-  "merenda-1": "Si es vol saber quin ingredient predomina, en quin sentit cal llegir l’ordre de la llista?",
-  "merenda-2": "Quina base comuna evita que la comparació de dues taules nutricionals siga enganyosa?",
-  "marees-1": "Quin element de l’observació va mantindre constant la classe per a comparar les imatges mes a mes?",
-  "marees-2": "A més de les fotografies, quines dades ambientals consultaren per a interpretar els canvis de la platja?",
-  "llibre-1": "De qui eren els plànols que posen en marxa les visites de Lídia?",
-  "llibre-2": "A partir de quin capítol diu la ressenya que els mapes comencen a connectar les històries dels veïns?",
-  "diari-1": "Quin objecte havia preparat la narradora durant el cap de setmana i que explica part de la seua decepció?",
-  "diari-2": "Quina prova visual li mostra Martina quan intenta parlar dels canvis al cel?",
-  "rutes-1": "Si el criteri prioritari és recórrer menys distància, quina de les dues opcions el complix?",
-  "rutes-2": "El grup vol limitar els encreuaments encara que haja de caminar més. Quants en té la ruta B?",
-  "llavors-1": "Quantes mostres separades va plantar Júlia per a comparar-ne el creixement?",
-  "llavors-2": "Quina mostra va desmentir la primera impressió que no arribaria a germinar?",
-  "llum-1": "Quants fanals va confirmar el servei municipal que no funcionaven?",
-  "llum-2": "Quina condició meteorològica pot impedir que la brigada torne divendres a reparar el cablejat?",
-  "riu-1": "Abans de compartir el registre de residus, quant de temps treballà el grup al costat del riu?",
-  "riu-2": "Quin element natural van decidir no retirar perquè podia servir de refugi a animals?",
-  "cova-1": "Quin tipus d’il·luminació va permetre distingir les formes repetides en la roca?",
-  "cova-2": "Quina antiguitat aproximada atribuïx el text a les petjades segons la datació dels sediments?",
-  "algoritme-1": "Quin comportament de l’usuari, més que una característica del dispositiu, pot servir de pista a l’algoritme?",
-  "algoritme-2": "Quina cosa intenta predir l’algoritme sense comprovar necessàriament si el contingut és cert?",
-  "rumor-1": "Quin canvi d’avaluació anunciava la captura que després desmentí el professor?",
-  "rumor-2": "Quant de temps passà entre la consulta pel canal oficial i la resposta del professor?",
-  "museu-1": "Quina data correspon a la recuperació arqueològica de la gerreta, i no al segle en què es va fabricar?",
-  "museu-2": "Quina diferència visible permet al visitant reconéixer les parts afegides en la reconstrucció?",
-  "corall-1": "Quina classificació dels coralls corregeix la impressió inicial que siguen plantes?",
-  "corall-2": "Quines tres variables registra l’equip per comparar l’evolució dels esculls?",
-  "energia-1": "En comparar els quatre registres mensuals, quin presenta el consum màxim?",
-  "energia-2": "Quin aparell va generar les xifres mensuals de consum de l’aula?",
-  "noticia-1": "Segons el text oficial A, quantes hores dura exactament el tancament anunciat per al divendres?",
-  "noticia-2": "Quin servei de la biblioteca es manté disponible l’endemà del tancament?",
-  "pescadors-1": "Quina reparació va fer Vicent durant l’espera que li va mostrar la importància d’una corda intacta?",
-  "pescadors-2": "Quin detall de l’ametler pregunta Vicent a Roser en acomiadar-se?",
-  "abelles-1": "Quins elements físics formen les cavitats on algunes espècies d’insectes poden refugiar-se?",
-  "abelles-2": "Quin recurs del pati observarà primer el grup abans de decidir si construïx un hotel?",
-  "ofici-1": "Quin objecte duu Mar al taller i quin problema addicional hi detecten, a més de la bombeta?",
-  "ofici-2": "Quin dia de la setmana pot portar algú un objecte al taller municipal?",
-  "bosc-1": "Durant quant de temps mantingué el grup la norma de no parlar abans de dibuixar el paisatge sonor?",
-  "bosc-2": "Quina representació visual va demanar la guia per comparar on percebia cadascú els sons?",
-  "mapa-1": "Abans de compartir el mapa, quins tres elements del marc informatiu recomana comprovar l’article?",
-  "mapa-2": "Encara que canvie l’escala i la impressió visual, quina dada del fenomen continua sent la mateixa?",
-  "cartes-1": "Quina proposta permetria a l’alumna tindre el mòbil disponible per a imprevistos i, alhora, mantindre’l fora de la vista?",
-  "cartes-2": "Quin canal alternatiu diu el professor que el centre ja té per a contactar amb les famílies?",
+  "videojoc-1": {
+    "prompt": "A més de la frustració, quin senyal de la partida pot indicar que l’atenció ha baixat?",
+    "answer": "Repetir els mateixos errors",
+    "distractors": [
+      "Beure aigua",
+      "Mirar lluny de la pantalla",
+      "Provar una estratègia nova"
+    ]
+  },
+  "videojoc-2": {
+    "prompt": "Quina acció de la llista s’adreça específicament a hidratar-se durant la pausa?",
+    "answer": "Beure aigua",
+    "distractors": [
+      "Mirar lluny de la pantalla",
+      "Alçar-se de la cadira",
+      "Anotar els errors de la partida"
+    ]
+  },
+  "mur-1": {
+    "prompt": "El riu s’incorpora dimecres; quina idea diferent proposa Alba l’endemà?",
+    "answer": "Afegir un banc pintat",
+    "distractors": [
+      "Afegir un bosc",
+      "Pintar un riu blau",
+      "Cobrir el mur de figures geomètriques"
+    ]
+  },
+  "mur-2": {
+    "prompt": "Omar entra per la porta del gimnàs. Des d’on observava Alba sense que la veren?",
+    "answer": "Darrere d’una columna",
+    "distractors": [
+      "Des de la porta del gimnàs",
+      "Al costat del banc",
+      "Des de la biblioteca"
+    ]
+  },
+  "micro-1": {
+    "prompt": "El projecte cita també fragments de cinc mil·límetres exactes. Quin límit defineix els microplàstics en el text?",
+    "answer": "Menys de cinc mil·límetres",
+    "distractors": [
+      "Cinc mil·límetres o menys",
+      "Menys de set mil·límetres",
+      "Qualsevol fragment menut"
+    ]
+  },
+  "micro-2": {
+    "prompt": "Encara que el projecte del centre mostre el riu, en quins ambients diu el text que ja se n’han trobat?",
+    "answer": "En rius, oceans, sòls i aire",
+    "distractors": [
+      "Només en el tram de riu estudiat",
+      "En oceans i platges, però no en l’aire",
+      "En rius i sòls, però no en oceans"
+    ]
+  },
+  "son-1": {
+    "prompt": "El text contrasta els horaris del cap de setmana amb un hàbit nocturn. Quin hàbit pot dificultar adormir-se?",
+    "answer": "Fer servir pantalles fins tard",
+    "distractors": [
+      "Dormir més el cap de setmana",
+      "Deixar el mòbil fora del llit",
+      "Preparar tasques tranquil·les"
+    ]
+  },
+  "son-2": {
+    "prompt": "L’aplicació pot mostrar dades, però quin dispositiu recomana deixar fora del llit?",
+    "answer": "El mòbil",
+    "distractors": [
+      "L’aplicació de son",
+      "El despertador de l’habitació",
+      "El portàtil de l’entrevistador"
+    ]
+  },
+  "merenda-1": {
+    "prompt": "La paraula «casolà» apareix al davant de l’envàs. En quin sentit s’ordenen realment els ingredients?",
+    "answer": "De més a menys quantitat",
+    "distractors": [
+      "De menys a més quantitat",
+      "Per ordre alfabètic",
+      "Segons la informació destacada al davant"
+    ]
+  },
+  "merenda-2": {
+    "prompt": "Per comparar taules nutricionals, quina base comuna cal usar en lloc de dues racions de mida diferent?",
+    "answer": "La mateixa quantitat de producte, per exemple 100 grams",
+    "distractors": [
+      "La mida de cada envàs",
+      "Una ració menuda d’un paquet i una gran de l’altre",
+      "El preu dels dos paquets"
+    ]
+  },
+  "marees-1": {
+    "prompt": "La foto des de les roques era puntual. Des de quin punt es van fer les imatges de la sèrie mensual comparable?",
+    "answer": "Des del mateix punt",
+    "distractors": [
+      "Des de punts diferents cada mes",
+      "Només des de les roques",
+      "Des del passeig del poble"
+    ]
+  },
+  "marees-2": {
+    "prompt": "A més de la sèrie fotogràfica, quines dades consultaren per interpretar l’efecte dels temporals?",
+    "answer": "Dades de vent i temporals",
+    "distractors": [
+      "Només el nombre de visitants",
+      "La temperatura de l’aigua i les hores de sol",
+      "Les fotografies fetes des de les roques"
+    ]
+  },
+  "llibre-1": {
+    "prompt": "El pare dibuixa un plànol actual. De qui són els mapes que originen les visites de Lídia?",
+    "answer": "Del seu iaio",
+    "distractors": [
+      "Del seu pare",
+      "Dels veïns que visita",
+      "De la mateixa Lídia"
+    ]
+  },
+  "llibre-2": {
+    "prompt": "Els dos primers capítols descriuen la casa. A partir de quin capítol es connecten les històries dels veïns?",
+    "answer": "Del tercer",
+    "distractors": [
+      "Del primer",
+      "Del segon",
+      "Del quart"
+    ]
+  },
+  "diari-1": {
+    "prompt": "Martina duia una càmera, però quin objecte havia preparat la narradora durant el cap de setmana?",
+    "answer": "Un quadern de dibuix",
+    "distractors": [
+      "Una càmera compacta",
+      "Un mapa del riu",
+      "Una jaqueta impermeable"
+    ]
+  },
+  "diari-2": {
+    "prompt": "La narradora dibuixa el riu a casa. Quina prova visual li havia ensenyat Martina sobre els núvols?",
+    "answer": "Fotos del cel",
+    "distractors": [
+      "El dibuix del riu",
+      "Un mapa de l’excursió",
+      "Una captura de la previsió"
+    ]
+  },
+  "rutes-1": {
+    "prompt": "La ruta B té menys encreuaments, però quina és més curta si el criteri és només la distància?",
+    "answer": "La ruta A, amb 1,2 km",
+    "distractors": [
+      "La ruta B, amb 1,5 km",
+      "La ruta B, perquè té un encreuament",
+      "Les dues, perquè duren quasi el mateix"
+    ]
+  },
+  "rutes-2": {
+    "prompt": "La ruta A en té dos i la B és més llarga. Quants encreuaments té la ruta B?",
+    "answer": "Un",
+    "distractors": [
+      "Dos",
+      "Tres",
+      "Cap"
+    ]
+  },
+  "llavors-1": {
+    "prompt": "Hi ha quatre testos, però un queda buit com a control. Quantes mostres amb llavors va plantar Júlia?",
+    "answer": "Tres",
+    "distractors": [
+      "Quatre",
+      "Dos",
+      "Una"
+    ]
+  },
+  "llavors-2": {
+    "prompt": "A és la que brota primer i C té una tija fina. Quina mostra germina després de semblar inactiva?",
+    "answer": "B",
+    "distractors": [
+      "A",
+      "C",
+      "La mostra de control"
+    ]
+  },
+  "llum-1": {
+    "prompt": "Hi ha una llum provisional al carrer. Quants fanals va confirmar l’ajuntament que estaven avariats?",
+    "answer": "Dos",
+    "distractors": [
+      "Un",
+      "Tres",
+      "Un, inclosa la llum provisional"
+    ]
+  },
+  "llum-2": {
+    "prompt": "La reparació de dimecres es va ajornar. Quan tornarà l’equip segons el nou avís?",
+    "answer": "Divendres, si el temps ho permet",
+    "distractors": [
+      "Dimecres, encara que ploga",
+      "Dijous al matí",
+      "Quan s’acabe l’hivern"
+    ]
+  },
+  "riu-1": {
+    "prompt": "El grup va romandre al lloc de nou a dotze. Quantes hores dedicà a retirar residus?",
+    "answer": "Dues hores",
+    "distractors": [
+      "Tres hores",
+      "Una hora",
+      "Tot el matí, sense cap pausa"
+    ]
+  },
+  "riu-2": {
+    "prompt": "Branques i residus van arribar amb la pluja. Quin element natural van deixar com a refugi per a animals?",
+    "answer": "Alguns troncs",
+    "distractors": [
+      "Les botelles",
+      "Els papers",
+      "La roda menuda"
+    ]
+  },
+  "cova-1": {
+    "prompt": "La llum frontal servia per a documentar la paret. Quina il·luminació va fer visibles les formes de dits i talons?",
+    "answer": "Llum lateral",
+    "distractors": [
+      "Llum frontal",
+      "Llum del sostre",
+      "Llum de la reproducció digital"
+    ]
+  },
+  "cova-2": {
+    "prompt": "Les fotografies són de l’any passat, però quina antiguitat indiquen els sediments per a les petjades?",
+    "answer": "Fa uns 7.000 anys",
+    "distractors": [
+      "De l’any passat",
+      "De fa uns 70 anys",
+      "De l’època de l’excavació actual"
+    ]
+  },
+  "algoritme-1": {
+    "prompt": "Entre les interaccions esmentades, quina mesura quant de temps es manté la persona davant d’un vídeo?",
+    "answer": "El temps de visualització",
+    "distractors": [
+      "Els temes que ha buscat",
+      "Els «m’agrada» que ha marcat",
+      "El color o la marca del mòbil"
+    ]
+  },
+  "algoritme-2": {
+    "prompt": "La plataforma pot mostrar un vídeo repetidament, però què intenta predir l’algoritme sense verificar-ho?",
+    "answer": "L’interés de l’usuari",
+    "distractors": [
+      "La veracitat del contingut",
+      "La qualitat científica del vídeo",
+      "La identitat de qui l’ha publicat"
+    ]
+  },
+  "rumor-1": {
+    "prompt": "Quina afirmació concreta feia la captura que el professor va desmentir pel canal oficial?",
+    "answer": "Que l’endemà no hi hauria examen",
+    "distractors": [
+      "Que l’examen començaria a les huit",
+      "Que l’examen s’ajornava fins divendres",
+      "Que l’examen es mantenia"
+    ]
+  },
+  "rumor-2": {
+    "prompt": "La conversa començà a les 8.00. Quant va passar des de la consulta oficial del delegat fins a la resposta del professor?",
+    "answer": "Deu minuts",
+    "distractors": [
+      "El temps que durà tot el debat",
+      "Una hora",
+      "Un dia sencer"
+    ]
+  },
+  "museu-1": {
+    "prompt": "La gerreta és del segle XIV i l’exposició s’obrí el 2026. En quin any es va recuperar en l’excavació?",
+    "answer": "En 2019",
+    "distractors": [
+      "Al segle XIV",
+      "En 2026",
+      "Fa 18 anys"
+    ]
+  },
+  "museu-2": {
+    "prompt": "La decoració original és blava sobre blanc. Quin detall diferencia les parts afegides?",
+    "answer": "Tenen un to lleugerament més clar",
+    "distractors": [
+      "Tenen decoració blava més intensa",
+      "Són les parts més altes de la gerreta",
+      "Estan fetes abans del segle XIV"
+    ]
+  },
+  "corall-1": {
+    "prompt": "Les algues microscòpiques viuen amb els coralls, però com classifica el text els coralls mateixos?",
+    "answer": "Animals menuts que viuen en colònies",
+    "distractors": [
+      "Algues que formen esculls",
+      "Plantes marines amb arrels",
+      "Estructures de roca sense organismes"
+    ]
+  },
+  "corall-2": {
+    "prompt": "La salinitat es va anotar una vegada per descriure el lloc. Quines tres variables es registren per seguir l’evolució?",
+    "answer": "Temperatura, color i creixement",
+    "distractors": [
+      "Salinitat, color i profunditat",
+      "Temperatura, salinitat i nombre d’embarcacions",
+      "Color, llum i tipus de sorra"
+    ]
+  },
+  "energia-1": {
+    "prompt": "El centre consumí 1.210 kWh en novembre; dins de la taula de l’aula, quin mes té el màxim?",
+    "answer": "Novembre, amb 121 kWh",
+    "distractors": [
+      "Novembre, amb 1.210 kWh",
+      "Desembre, amb 118 kWh",
+      "Octubre, amb 96 kWh"
+    ]
+  },
+  "energia-2": {
+    "prompt": "La factura també tracta el consum, però quin aparell va registrar les xifres de l’aula?",
+    "answer": "El mesurador instal·lat pel centre",
+    "distractors": [
+      "La factura de la companyia",
+      "El termòstat de la calefacció",
+      "El comptador de l’edifici sencer"
+    ]
+  },
+  "noticia-1": {
+    "prompt": "El missatge diu que tanca tota la setmana, però què anuncia l’avís oficial per al divendres?",
+    "answer": "Dues hores, de 16.00 a 18.00",
+    "distractors": [
+      "Tota la setmana",
+      "Fins a l’abril",
+      "Dissabte de matí"
+    ]
+  },
+  "noticia-2": {
+    "prompt": "El divendres hi ha tancament. Quin servei continua disponible dissabte al matí?",
+    "answer": "El préstec de llibres",
+    "distractors": [
+      "L’accés a totes les sales",
+      "La reparació elèctrica",
+      "Cap servei fins a l’abril"
+    ]
+  },
+  "pescadors-1": {
+    "prompt": "La màquina de gel conserva el peix. Què va reparar Vicent mentre esperava l’eixida del vaixell?",
+    "answer": "Una xarxa amb una corda trencada",
+    "distractors": [
+      "La màquina de gel",
+      "El motor del vaixell",
+      "Una caixa de peix"
+    ]
+  },
+  "pescadors-2": {
+    "prompt": "Vicent pregunta també per l’hort. Quin detall concret vol saber de l’ametler?",
+    "answer": "Si ja té flor",
+    "distractors": [
+      "Si l’hort necessita reg",
+      "Quan torna del port",
+      "Si el peix es manté fresc"
+    ]
+  },
+  "abelles-1": {
+    "prompt": "Les plantes donen aliment, però quins elements formen l’estructura de refugi de l’hotel?",
+    "answer": "Tubs i cavitats",
+    "distractors": [
+      "Flors i fulles",
+      "Aigua i pol·len",
+      "Arrels i llavors"
+    ]
+  },
+  "abelles-2": {
+    "prompt": "Abans de decidir si fan l’hotel, quins recursos del pati estudiarà primer el grup?",
+    "answer": "Les plantes i els períodes de floració",
+    "distractors": [
+      "La mida dels tubs",
+      "El nombre de telèfons de l’alumnat",
+      "La temperatura de les aules"
+    ]
+  },
+  "ofici-1": {
+    "prompt": "Mar pensava que només calia canviar la bombeta. Quin altre problema tenia la seua llum de lectura?",
+    "answer": "El cable tenia un tall",
+    "distractors": [
+      "La ràdio no sonava",
+      "La cremallera estava trencada",
+      "La llum no tenia interruptor"
+    ]
+  },
+  "ofici-2": {
+    "prompt": "Dijous hi ha una activitat de reparació a l’institut. Quin dia es reunix el taller municipal?",
+    "answer": "Cada dimecres",
+    "distractors": [
+      "Cada dijous",
+      "Els dilluns",
+      "Un dissabte al mes"
+    ]
+  },
+  "bosc-1": {
+    "prompt": "Abans de dibuixar el mapa dels sons, quant de temps havia de mantindre el grup el silenci?",
+    "answer": "Deu minuts",
+    "distractors": [
+      "Fins a arribar a la séquia",
+      "Durant tot el trajecte de tornada",
+      "Fins que acabara el dibuix"
+    ]
+  },
+  "bosc-2": {
+    "prompt": "Quin registre visual permetia comparar on havia sentit cadascú els sons, i no quin li havia agradat més?",
+    "answer": "Un mapa dels sons",
+    "distractors": [
+      "Una llista oral dels sons preferits",
+      "Un dibuix detallat de tots els arbres",
+      "Una fotografia del grup"
+    ]
+  },
+  "mapa-1": {
+    "prompt": "L’escala també ajuda a llegir un mapa. Quins tres elements recomana revisar l’article abans de compartir les dades?",
+    "answer": "Llegenda, data i origen",
+    "distractors": [
+      "Escala, color i temperatura",
+      "Llegenda, escala i nombre de colors",
+      "Data, temperatura i títol"
+    ]
+  },
+  "mapa-2": {
+    "prompt": "L’escala pot canviar la impressió visual. Quina dada no canvia per això?",
+    "answer": "La temperatura real",
+    "distractors": [
+      "El to roig del mapa",
+      "La mida de la diferència en pantalla",
+      "La impressió de qui el mira"
+    ]
+  },
+  "cartes-1": {
+    "prompt": "La professora proposa usar el telèfon del centre. Què proposa l’alumna per a una emergència?",
+    "answer": "Dur el mòbil apagat a la motxilla",
+    "distractors": [
+      "Deixar-lo a casa",
+      "Fer fotos durant tota la visita",
+      "Usar el telèfon del centre"
+    ]
+  },
+  "cartes-2": {
+    "prompt": "L’alumna parla del seu mòbil; quin canal diu el professor que el centre ja té per a contactar amb les famílies?",
+    "answer": "Un telèfon del centre",
+    "distractors": [
+      "El mòbil personal de cada alumne",
+      "Una aplicació de pagament",
+      "Una ràdio escolar"
+    ]
+  },
   "aigua-3": {
     "prompt": "Una alumna veu una aixeta que degota i pensa arreglar-la sola. Quin motiu del cartell justifica que demane ajuda a una persona adulta?",
     "answer": "La reparació d’una fuga ha de fer-se amb seguretat.",
@@ -436,7 +1069,15 @@ const questionRevisions={
       "Mantindre l’horari sense observar si s’utilitza durant el període de prova."
     ]
   },
-  "biblioteca-6": "Si algú només pot anar a la biblioteca dissabte, què diu la notícia sobre el seu horari?",
+  "biblioteca-6": {
+    "prompt": "Dissabte continua amb quin horari, encara que l’ampliació només afecta dimarts i dijous?",
+    "answer": "L’horari habitual de dissabte",
+    "distractors": [
+      "Fins a les huit de la vesprada",
+      "Només l’horari de préstec de llibres",
+      "El mateix horari ampliat de dijous"
+    ]
+  },
   "biblioteca-7": "Quina dada important per a mantindre l’horari ampliat encara no aporta la notícia?",
   "biblioteca-8": {
     "prompt": "Com complementa l’observació de la responsable els resultats de l’enquesta?",
