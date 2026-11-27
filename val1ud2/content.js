@@ -276,3 +276,63 @@ const sets=[
 ];
 sets.forEach((set,i)=>{g.levels[i].goal='Activitats autocorregibles per a consolidar el contingut. Respon, comprova les explicacions i torna a intentar les que necessites.';g.levels[i].questions.push(...set.map(([section,prompt,answer,b,c,why])=>({...Q(prompt,answer,b,c,why),section})));});
 }
+
+
+/* Més pràctica de consolidació de subjecte i predicat. */
+{
+const g=UD2.find(m=>m.id==='gramatica');
+const banks=[
+[
+['Subjecte i predicat','En «La bibliotecària ordena els llibres», quin és el subjecte?','La bibliotecària','Ordena els llibres','Els llibres','«La bibliotecària» concorda amb el verb «ordena».'],
+['Subjecte i predicat','En «Els ocells volen sobre el riu», quin és el predicat?','Volen sobre el riu','Els ocells','Sobre el riu','El predicat inclou el verb i el complement de lloc.'],
+['Subjecte i predicat','En «La meua germana menuda dibuixa animals», quin és el subjecte complet?','La meua germana menuda','La meua germana menuda dibuixa','Animals','El subjecte complet inclou els elements que acompanyen «germana».'],
+['Nuclis','En «El pare de Júlia cuina arròs», quin és el nucli del subjecte?','Pare','Júlia','Arròs','El nom principal del grup «el pare de Júlia» és «pare».'],
+['Nuclis','En «Les plantes necessiten aigua», quin és el nucli del predicat?','Necessiten','Plantes','Aigua','«Necessiten» és el verb i el nucli del predicat.'],
+['Nuclis','En «Vosaltres escolteu atentament», quin és el nucli del subjecte?','Vosaltres','Escolteu','Atentament','El pronom «vosaltres» és el subjecte.'],
+['Subjecte omés','Quin és el subjecte omés de «Demà cantaré»?','Jo','Tu','Vosaltres','«Cantaré» és primera persona del singular.'],
+['Subjecte omés','Quin és el subjecte omés de «Escrivim una carta»?','Nosaltres','Vosaltres','Jo','La forma «escrivim» correspon a nosaltres.'],
+['Subjecte omés','Quin és el subjecte omés de «Obris la finestra»?','Tu','Jo','Nosaltres','«Obris» és segona persona del singular.'],
+['Oracions impersonals','Quina oració és impersonal?','Neva a la muntanya','La neu cau de la teulada','Els esquiadors baixen','«Neva» expressa un fenomen meteorològic i no té subjecte.'],
+['Oracions impersonals','En «Hi ha una motxilla al banc», quin és el subjecte?','No hi ha subjecte','Una motxilla','Al banc','«Hi ha» expressa existència i forma una oració impersonal.'],
+['Oracions impersonals','Quina frase conté un subjecte omés i no és impersonal?','Preparem el dinar','Plou al carrer','Hi ha dinar','«Preparem» permet recuperar el subjecte «nosaltres».'],
+['Concordança','Quina és la forma plural correcta de «La xiqueta salta»?','Les xiquetes salten','Les xiquetes salta','La xiqueta salten','El subjecte i el verb passen al plural: «les xiquetes salten».'],
+['Concordança','Completa: «El meu amic … a classe».','Arriba','Arriben','Arribeu','«El meu amic» és tercera persona del singular.'],
+['Concordança','Completa: «Les finestres … obertes».','Estan','Està','Estic','«Les finestres» és plural i concorda amb «estan».']
+],
+[
+['Subjecte i predicat','En «A l’escenari apareix un mag», quin és el subjecte?','Un mag','A l’escenari','Apareix','«Un mag» concorda amb «apareix», encara que vaja després.'],
+['Subjecte i predicat','En «A la nit, els veïns tanquen les finestres», quin és el predicat complet?','A la nit tanquen les finestres','Tan­quen les finestres','Els veïns','El complement temporal «a la nit» també pertany al predicat.'],
+['Subjecte i predicat','En «Per la carretera circulen dos autobusos», quin és el subjecte?','Dos autobusos','Per la carretera','Circulen','El grup «dos autobusos» concorda amb «circulen».'],
+['Nuclis','En «El llibre de les meues amigues és interessant», quin és el nucli del subjecte?','Llibre','Amigues','Interessant','«De les meues amigues» complementa el nom principal «llibre».'],
+['Nuclis','En «Els núvols han tapat el sol», quin és el nucli verbal?','Han tapat','Han','Sol','La forma verbal composta és «han tapat».'],
+['Nuclis','En «La camisa de ratlles verdes està neta», quin és el nucli del subjecte?','Camisa','Ratlles','Verdes','«Camisa» és el nom principal; «de ratlles verdes» el complementa.'],
+['Subjecte omés','Quin és el subjecte omés de «Vindrem després de classe»?','Nosaltres','Vosaltres','Jo','«Vindrem» expressa primera persona del plural.'],
+['Subjecte omés','Quin és el subjecte omés de «Llegíeu molt bé»?','Vosaltres','Nosaltres','Tu','«Llegíeu» és segona persona del plural.'],
+['Subjecte omés','En «Hem arribat a temps», quin és el subjecte?','Nosaltres, omés','A temps','No hi ha subjecte','La terminació de «hem arribat» indica nosaltres.'],
+['Oracions impersonals','Quina oració té el verb haver-hi amb valor d’existència?','Hi havia moltes persones','Havien eixit moltes persones','Les persones havien arribat','«Hi havia» indica existència; en les altres, «haver» és auxiliar.'],
+['Oracions impersonals','Quina forma és correcta en valencià estàndard?','Hi havia quatre cadires','Hi havien quatre cadires','Hi havia quatre cadires eren','«Haver-hi» existencial es manté en singular.'],
+['Oracions impersonals','Quina oració té un subjecte expressat?','La pluja mulla el carrer','Plou sobre el carrer','Hi ha bassals al carrer','En «la pluja mulla», «la pluja» és el subjecte.'],
+['Concordança','Quin canvi ajuda a identificar el subjecte de «A la finestra canta un pardal»?','A la finestra canten uns pardals','A les finestres canta un pardal','A la finestra cantava un pardal','El verb i «un pardal» canvien junts de nombre.'],
+['Concordança','En «M’encanten les taronges», quin és el subjecte?','Les taronges','M’','Jo','«M’encanta la taronja»: «les taronges» concorda amb el verb.'],
+['Concordança','Completa: «El dibuix dels alumnes … a la paret».','Penja','Pengen','Pengeu','El nucli del subjecte és «dibuix», singular.']
+],
+[
+['Subjecte i predicat','Quin és el predicat complet de «Ahir de vesprada les meues cosines van visitar el museu»?','Ahir de vesprada van visitar el museu','Van visitar el museu','Les meues cosines','«Ahir de vesprada» és un complement del predicat, encara que aparega al principi.'],
+['Subjecte i predicat','En «A la motxilla caben tots els llibres», quin és el subjecte?','Tots els llibres','A la motxilla','Caben','«A la motxilla cap un llibre»: «tots els llibres» concorda amb el verb.'],
+['Subjecte i predicat','En «Al meu germà li molesten els sorolls», quin és el subjecte?','Els sorolls','Al meu germà','Li','«Li molesta el soroll»: el subjecte és el grup que concorda amb el verb.'],
+['Nuclis','En «La directora de les escoles ha inaugurat la mostra», quins són els dos nuclis?','Directora / ha inaugurat','Escoles / ha inaugurat','Mostra / directora','«Directora» és el nucli del subjecte i «ha inaugurat» el del predicat.'],
+['Nuclis','En «Aquelles tres caixes de colors pesen molt», quin és el nucli del subjecte?','Caixes','Colors','Tres','El nom principal és «caixes»; la resta el determina o complementa.'],
+['Nuclis','En «Nosaltres vam preparar el berenar», quin és el nucli del predicat?','Vam preparar','Berenar','Vam','«Vam preparar» és la forma verbal perifràstica completa.'],
+['Subjecte omés','En «Pau i tu vindreu», si ometem el subjecte, quina forma queda?','Vindreu','Vindrem','Vindran','«Pau i tu» equival a «vosaltres» i concorda amb «vindreu».'],
+['Subjecte omés','En «Han comprat entrades», què indica la forma verbal sobre el subjecte omés?','És de tercera persona del plural','És sempre una única dona','No existeix cap subjecte','«Han comprat» indica tercera persona plural; el context concreta el referent.'],
+['Subjecte omés','Quina oració permet recuperar «nosaltres» com a subjecte omés?','Aquesta vesprada farem esport','Aquesta vesprada farà fred','Aquesta vesprada hi haurà esport','La forma «farem» correspon a nosaltres.'],
+['Oracions impersonals','Quina oració conté «haver» com a auxiliar i té subjecte?','Els xiquets havien arribat','Hi havia molts xiquets','A la muntanya nevava','En «havien arribat», «haver» és auxiliar i el subjecte és «els xiquets».'],
+['Oracions impersonals','En «Demà hi haurà excursions», quin grup és el subjecte?','Cap: l’oració és impersonal','Excursions','Demà','«Haver-hi» amb sentit d’existència és impersonal també en futur.'],
+['Oracions impersonals','En «A l’hivern sol nevar a la serra», quin és el subjecte?','No n’hi ha','A l’hivern','La serra','«Nevar» expressa un fenomen meteorològic; els altres grups indiquen temps i lloc.'],
+['Concordança','Quina transformació comprova el subjecte de «Ens preocupa la prova»?','Ens preocupen les proves','Em preocupa la prova','Ens preocupava la prova','En canviar el nombre, «la prova» i el verb canvien conjuntament.'],
+['Concordança','En «A la classe falten dues taules», què passa si el subjecte és singular?','A la classe falta una taula','A la classe falten una taula','A les classes falta dues taules','El subjecte singular «una taula» concorda amb «falta».'],
+['Concordança','En «A l’entrada apareixen tres gats», quin canvi assenyala el subjecte?','A l’entrada apareix un gat','A les entrades apareixen tres gats','A l’entrada apareixien tres gats','«Tres gats» i «apareixen» passen junts al singular.']
+]
+];
+banks.forEach((bank,i)=>g.levels[i].questions.push(...bank.map(([section,prompt,answer,b,c,why])=>({...Q(prompt,answer,b,c,why),section}))));
+}
